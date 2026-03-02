@@ -1,0 +1,7 @@
+stylehub:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/stylehub.db
+      schema: main

@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw StyleHub e-commerce data
+    schema: main
+    
+    tables:
+      - name: products
+      - name: customers
+      - name: sessions
+      - name: orders
