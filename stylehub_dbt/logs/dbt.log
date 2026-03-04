@@ -2562,3 +2562,2926 @@ alter table "stylehub"."main"."rpt_early_persona_signals__dbt_tmp" rename to "rp
 [0m13:25:22.367214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077f3140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077f2cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106eb7530>]}
 [0m13:25:22.367521 [debug] [MainThread]: Flushing usage events
 [0m13:25:22.487154 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:50:52.703219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b393d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060b5b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060b58b0>]}
+
+
+============================== 21:50:52.714667 | 2f0d8004-c84d-49ca-bc00-fa963665f163 ==============================
+[0m21:50:52.714667 [info ] [MainThread]: Running with dbt=1.11.4
+[0m21:50:52.715184 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'empty': 'False', 'version_check': 'True', 'target_path': 'None', 'use_colors': 'True', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'indirect_selection': 'eager', 'log_format': 'default', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'invocation_command': 'dbt run --select rpt_customer_journey'}
+[0m21:50:52.983462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10623d460>]}
+[0m21:50:53.029398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106049df0>]}
+[0m21:50:53.031343 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m21:50:53.240481 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m21:50:53.313359 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m21:50:53.313835 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/personas/rpt_customer_journey.sql
+[0m21:50:53.487014 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.product
+- models.stylehub.staging
+- models.stylehub.marts.core
+- models.stylehub.marts.personas
+[0m21:50:53.490942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073eaf00>]}
+[0m21:50:53.534786 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m21:50:53.537019 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m21:50:53.557225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073d1c40>]}
+[0m21:50:53.557648 [info ] [MainThread]: Found 8 models, 472 macros
+[0m21:50:53.557940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10662d250>]}
+[0m21:50:53.559295 [info ] [MainThread]: 
+[0m21:50:53.559604 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:50:53.559823 [info ] [MainThread]: 
+[0m21:50:53.560181 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:50:53.560808 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m21:50:53.609065 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m21:50:53.609457 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m21:50:53.609702 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:50:53.635397 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m21:50:53.636848 [debug] [ThreadPool]: On list_stylehub: Close
+[0m21:50:53.637371 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m21:50:53.637712 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m21:50:53.643054 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:50:53.643394 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m21:50:53.643619 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:50:53.644710 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:50:53.645971 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:50:53.646213 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m21:50:53.646583 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:50:53.646780 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:50:53.646972 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m21:50:53.647366 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:50:53.647971 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m21:50:53.648191 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:50:53.648385 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m21:50:53.648749 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:50:53.649021 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m21:50:53.653137 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m21:50:53.657438 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m21:50:53.657697 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m21:50:53.657896 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:50:53.658365 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:50:53.658568 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m21:50:53.658773 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m21:50:53.679665 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m21:50:53.681036 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m21:50:53.682321 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m21:50:53.682602 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m21:50:53.684240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ed3380>]}
+[0m21:50:53.684629 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:50:53.684851 [debug] [MainThread]: On master: BEGIN
+[0m21:50:53.685047 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:50:53.685495 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:50:53.685700 [debug] [MainThread]: On master: COMMIT
+[0m21:50:53.685891 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:50:53.686076 [debug] [MainThread]: On master: COMMIT
+[0m21:50:53.686403 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:50:53.686599 [debug] [MainThread]: On master: Close
+[0m21:50:53.688913 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_customer_journey
+[0m21:50:53.689329 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_customer_journey ......................... [RUN]
+[0m21:50:53.689664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_customer_journey)
+[0m21:50:53.689918 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_customer_journey
+[0m21:50:53.696989 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_customer_journey"
+[0m21:50:53.698763 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_customer_journey
+[0m21:50:53.724436 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_customer_journey"
+[0m21:50:53.725904 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:50:53.726204 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: BEGIN
+[0m21:50:53.726455 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:50:53.726975 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:50:53.727216 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:50:53.727631 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_customer_journey__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+sessions as (
+    select * from "stylehub"."main"."stg_sessions"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--combine all events into timeline
+all_events as (
+    select 
+        s.customer_id,
+        s.session_start_at as event_timestamp,
+        'Session' as event_type,
+        s.num_products_viewed as event_value,
+        s.purchased as led_to_purchase,
+    from sessions s 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at as event_timestamp,
+        'Purchase' as event_type,
+        o.total as event_value,
+        true as led_to_purchase
+    from orders o 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at + interval '7 days' as event_timestamp --assume returns
+        'Return' as event_type,
+        false as led_to_purchase,
+    from orders o 
+    where o.returned = true
+),
+
+--add customer context and calculate days since signup
+events_with_context as (
+    select 
+        e.customer_id,
+        c.signed_up_at,
+        e.event_timestamp,
+        e.event_type,
+        e.event_value,
+        e.led_to_purchase,
+
+        --days since signup
+        datediff('day', c.signed_up_at, e.event_timestamp) as days_since_signup,
+
+        --weeks since signup
+        floor(datediff('day', c.signed_up_at, e.event_timestamp) / 7) as weeks_since_signup,
+
+        --event sequence number
+        row_number() over(partition by e.customer_id order by e.event_timestamp) as event_sequence,
+
+        --cluster info
+        cl.cluster_name,
+        cl.persona_hidden
+    from all_events e 
+    inner join customers c on e.customer_id = c.customer_id
+    inner join clusters cl on e.customer_id = cl.customer_id
+),
+
+--create journey timeline string
+journey_timeline as (
+    select 
+        customer_id,
+        cluster_name,
+        persona_hidden,
+        signed_up_at,
+
+        --journey milestones
+        min(case when event_type = 'Session' then event_timestamp end) as first_session,
+        min(case when event_type = 'Purchase' then event_timestamp end) as first_purchase,
+        min(case when event_type = 'Return' then event_timestamp end) as first_return,
+
+        --days to milestones
+        min(case when event_type = 'Session' then days_since_signup end) as days_to_first_session,
+        min(case when event_type = 'Purchase' then days_since_signup end) as days_to_first_purchase,
+        min(case when event_type = 'Return' then days_since_signup end) as days_to_first_return,
+
+        --event counts by week
+        count(case when weeks_since_signup = 0 then 1 end) as week_0_events
+        count(case when weeks_since_signup = 1 then 1 end) as week_1_events,
+        count(case when weeks_since_signup = 2 then 1 end) as week_2_events,
+        count(case when weeks_since_signup = 3 then 1 end) as week_3_events,
+        count(case when weeks_since_signup = 4 then 1 end) as week_4_events,
+
+        --purchase counts by week
+        count(case when weeks_since_signup = 0 and event_type = 'Purchase' then 1 end) as week_0_purchases,
+        count(case when weeks_since_signup = 1 and event_type = 'Purchase' then 1 end) as week_1_purchases,
+        count(case when weeks_since_signup = 2 and event_type = 'Purchase' then 1 end) as week_2_purchases,
+        count(case when weeks_since_signup = 3 and event_type = 'Purchase' then 1 end) as week_3_purchases,
+        count(case when weeks_since_signup = 4 and event_type = 'Purchase' then 1 end) as week_4_purchases
+    from events_with_context
+    group by customer_id, cluster_name, persona_hidden, signed_up_at
+),
+
+--sample journey strings (first 30 days)
+journey_strings as (
+    select 
+        customer_id,
+        cluster_name,
+        string_agg(
+            event_type ||
+            case 
+                when event_type = 'Purchase' then ' ($' || round(event_value, 0) || ')'
+                when event_type = 'Session' then ' (' || round(event_value, 0) || ' views'
+                else ''
+            end ||
+            ' [Day ' || days_since_signup || ']',
+            ' -> '
+            order by event_timestamp 
+        ) as journey_path
+    from events_with_context 
+    where days_since_signup <= 30 --want 1st 30 days only
+    group by customer_id, cluster_name
+)
+
+--combining everything
+select 
+    jt.*,
+    js.journey_path
+from journey_timeline jt 
+left join journey_strings js on jt.customer_id = js.customer_id
+    );
+  
+  
+[0m21:50:53.732146 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_customer_journey__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+sessions as (
+    select * from "stylehub"."main"."stg_sessions"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--combine all events into timeline
+all_events as (
+    select 
+        s.customer_id,
+        s.session_start_at as event_timestamp,
+        'Session' as event_type,
+        s.num_products_viewed as event_value,
+        s.purchased as led_to_purchase,
+    from sessions s 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at as event_timestamp,
+        'Purchase' as event_type,
+        o.total as event_value,
+        true as led_to_purchase
+    from orders o 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at + interval '7 days' as event_timestamp --assume returns
+        'Return' as event_type,
+        false as led_to_purchase,
+    from orders o 
+    where o.returned = true
+),
+
+--add customer context and calculate days since signup
+events_with_context as (
+    select 
+        e.customer_id,
+        c.signed_up_at,
+        e.event_timestamp,
+        e.event_type,
+        e.event_value,
+        e.led_to_purchase,
+
+        --days since signup
+        datediff('day', c.signed_up_at, e.event_timestamp) as days_since_signup,
+
+        --weeks since signup
+        floor(datediff('day', c.signed_up_at, e.event_timestamp) / 7) as weeks_since_signup,
+
+        --event sequence number
+        row_number() over(partition by e.customer_id order by e.event_timestamp) as event_sequence,
+
+        --cluster info
+        cl.cluster_name,
+        cl.persona_hidden
+    from all_events e 
+    inner join customers c on e.customer_id = c.customer_id
+    inner join clusters cl on e.customer_id = cl.customer_id
+),
+
+--create journey timeline string
+journey_timeline as (
+    select 
+        customer_id,
+        cluster_name,
+        persona_hidden,
+        signed_up_at,
+
+        --journey milestones
+        min(case when event_type = 'Session' then event_timestamp end) as first_session,
+        min(case when event_type = 'Purchase' then event_timestamp end) as first_purchase,
+        min(case when event_type = 'Return' then event_timestamp end) as first_return,
+
+        --days to milestones
+        min(case when event_type = 'Session' then days_since_signup end) as days_to_first_session,
+        min(case when event_type = 'Purchase' then days_since_signup end) as days_to_first_purchase,
+        min(case when event_type = 'Return' then days_since_signup end) as days_to_first_return,
+
+        --event counts by week
+        count(case when weeks_since_signup = 0 then 1 end) as week_0_events
+        count(case when weeks_since_signup = 1 then 1 end) as week_1_events,
+        count(case when weeks_since_signup = 2 then 1 end) as week_2_events,
+        count(case when weeks_since_signup = 3 then 1 end) as week_3_events,
+        count(case when weeks_since_signup = 4 then 1 end) as week_4_events,
+
+        --purchase counts by week
+        count(case when weeks_since_signup = 0 and event_type = 'Purchase' then 1 end) as week_0_purchases,
+        count(case when weeks_since_signup = 1 and event_type = 'Purchase' then 1 end) as week_1_purchases,
+        count(case when weeks_since_signup = 2 and event_type = 'Purchase' then 1 end) as week_2_purchases,
+        count(case when weeks_since_signup = 3 and event_type = 'Purchase' then 1 end) as week_3_purchases,
+        count(case when weeks_since_signup = 4 and event_type = 'Purchase' then 1 end) as week_4_purchases
+    from events_with_context
+    group by customer_id, cluster_name, persona_hidden, signed_up_at
+),
+
+--sample journey strings (first 30 days)
+journey_strings as (
+    select 
+        customer_id,
+        cluster_name,
+        string_agg(
+            event_type ||
+            case 
+                when event_type = 'Purchase' then ' ($' || round(event_value, 0) || ')'
+                when event_type = 'Session' then ' (' || round(event_value, 0) || ' views'
+                else ''
+            end ||
+            ' [Day ' || days_since_signup || ']',
+            ' -> '
+            order by event_timestamp 
+        ) as journey_path
+    from events_with_context 
+    where days_since_signup <= 30 --want 1st 30 days only
+    group by customer_id, cluster_name
+)
+
+--combining everything
+select 
+    jt.*,
+    js.journey_path
+from journey_timeline jt 
+left join journey_strings js on jt.customer_id = js.customer_id
+    );
+  
+  
+[0m21:50:53.732645 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m21:50:53.733009 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: ROLLBACK
+[0m21:50:53.738421 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.rpt_customer_journey'
+[0m21:50:53.738703 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: Close
+[0m21:50:53.743052 [debug] [Thread-1 (]: Runtime Error in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)
+  Parser Error: syntax error at or near "'Return'"
+  
+  LINE 54:         'Return' as event_type,
+                   ^
+[0m21:50:53.745584 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2f0d8004-c84d-49ca-bc00-fa963665f163', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107296de0>]}
+[0m21:50:53.746065 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.rpt_customer_journey ................ [[31mERROR[0m in 0.05s]
+[0m21:50:53.746478 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_customer_journey
+[0m21:50:53.746845 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.rpt_customer_journey' to be skipped because of status 'error'.  Reason: Runtime Error in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)
+  Parser Error: syntax error at or near "'Return'"
+  
+  LINE 54:         'Return' as event_type,
+                   ^.
+[0m21:50:53.749944 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:50:53.750195 [debug] [MainThread]: On master: BEGIN
+[0m21:50:53.750396 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:50:53.750890 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:50:53.751091 [debug] [MainThread]: On master: COMMIT
+[0m21:50:53.751279 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:50:53.751458 [debug] [MainThread]: On master: COMMIT
+[0m21:50:53.751775 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:50:53.751967 [debug] [MainThread]: On master: Close
+[0m21:50:53.752211 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:50:53.752401 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_customer_journey' was properly closed.
+[0m21:50:53.752607 [info ] [MainThread]: 
+[0m21:50:53.752875 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.19 seconds (0.19s).
+[0m21:50:53.753433 [debug] [MainThread]: Command end result
+[0m21:50:53.819116 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m21:50:53.820622 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m21:50:53.826246 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m21:50:53.826541 [info ] [MainThread]: 
+[0m21:50:53.826813 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:50:53.827035 [info ] [MainThread]: 
+[0m21:50:53.827303 [error] [MainThread]: [31mFailure in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)[0m
+[0m21:50:53.827551 [error] [MainThread]:   Runtime Error in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)
+  Parser Error: syntax error at or near "'Return'"
+  
+  LINE 54:         'Return' as event_type,
+                   ^
+[0m21:50:53.827743 [info ] [MainThread]: 
+[0m21:50:53.827966 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/personas/rpt_customer_journey.sql
+[0m21:50:53.828153 [info ] [MainThread]: 
+[0m21:50:53.828368 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:50:53.830127 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.1882036, "process_in_blocks": "0", "process_kernel_time": 0.39074, "process_mem_max_rss": "144392192", "process_out_blocks": "0", "process_user_time": 2.05139}
+[0m21:50:53.830514 [debug] [MainThread]: Command `dbt run` failed at 21:50:53.830443 after 1.19 seconds
+[0m21:50:53.830804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072f1cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10502f470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a0ffe0>]}
+[0m21:50:53.831078 [debug] [MainThread]: Flushing usage events
+[0m21:50:53.983176 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:51:13.213551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104170a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078b5be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078b5880>]}
+
+
+============================== 21:51:13.218271 | 9d845968-7f0f-4ac5-9cfc-0e624ebbdb25 ==============================
+[0m21:51:13.218271 [info ] [MainThread]: Running with dbt=1.11.4
+[0m21:51:13.218801 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --select rpt_customer_journey', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'partial_parse': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'fail_fast': 'False', 'quiet': 'False', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error': 'None', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt'}
+[0m21:51:13.458552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043fbd10>]}
+[0m21:51:13.505467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107954350>]}
+[0m21:51:13.508193 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m21:51:13.593417 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m21:51:13.664301 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:51:13.664829 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/personas/rpt_customer_journey.sql
+[0m21:51:13.836356 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.product
+- models.stylehub.marts.core
+- models.stylehub.staging
+- models.stylehub.marts.personas
+[0m21:51:13.840429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1189eb260>]}
+[0m21:51:13.883568 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m21:51:13.885670 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m21:51:13.901270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1189d1d60>]}
+[0m21:51:13.901687 [info ] [MainThread]: Found 8 models, 472 macros
+[0m21:51:13.901949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1188f0a10>]}
+[0m21:51:13.903127 [info ] [MainThread]: 
+[0m21:51:13.903419 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:51:13.903630 [info ] [MainThread]: 
+[0m21:51:13.903968 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:51:13.904599 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m21:51:13.946698 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m21:51:13.947076 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m21:51:13.947321 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:51:13.972045 [debug] [ThreadPool]: SQL status: OK in 0.025 seconds
+[0m21:51:13.973231 [debug] [ThreadPool]: On list_stylehub: Close
+[0m21:51:13.973758 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m21:51:13.974093 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m21:51:13.979322 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:51:13.979619 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m21:51:13.979847 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:51:13.980938 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:51:13.982027 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:51:13.982243 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m21:51:13.982600 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:51:13.982789 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:51:13.982982 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m21:51:13.983517 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:51:13.984098 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m21:51:13.984304 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:51:13.984490 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m21:51:13.984797 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:51:13.984992 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m21:51:13.988833 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m21:51:13.993086 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m21:51:13.993358 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m21:51:13.993567 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:51:13.994031 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:51:13.994237 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m21:51:13.994438 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m21:51:14.010760 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m21:51:14.012140 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m21:51:14.013411 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m21:51:14.013681 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m21:51:14.015010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045d3470>]}
+[0m21:51:14.015350 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:51:14.015561 [debug] [MainThread]: On master: BEGIN
+[0m21:51:14.015752 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:51:14.016168 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:51:14.016367 [debug] [MainThread]: On master: COMMIT
+[0m21:51:14.016551 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:51:14.016730 [debug] [MainThread]: On master: COMMIT
+[0m21:51:14.017031 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:51:14.017218 [debug] [MainThread]: On master: Close
+[0m21:51:14.018933 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_customer_journey
+[0m21:51:14.019300 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_customer_journey ......................... [RUN]
+[0m21:51:14.019602 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_customer_journey)
+[0m21:51:14.019840 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_customer_journey
+[0m21:51:14.026538 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_customer_journey"
+[0m21:51:14.027466 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_customer_journey
+[0m21:51:14.052721 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_customer_journey"
+[0m21:51:14.053565 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:51:14.053839 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: BEGIN
+[0m21:51:14.054078 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:51:14.054612 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:51:14.054842 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:51:14.055250 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_customer_journey__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+sessions as (
+    select * from "stylehub"."main"."stg_sessions"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--combine all events into timeline
+all_events as (
+    select 
+        s.customer_id,
+        s.session_start_at as event_timestamp,
+        'Session' as event_type,
+        s.num_products_viewed as event_value,
+        s.purchased as led_to_purchase,
+    from sessions s 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at as event_timestamp,
+        'Purchase' as event_type,
+        o.total as event_value,
+        true as led_to_purchase
+    from orders o 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at + interval '7 days' as event_timestamp, --assume returns
+        'Return' as event_type,
+        false as led_to_purchase,
+    from orders o 
+    where o.returned = true
+),
+
+--add customer context and calculate days since signup
+events_with_context as (
+    select 
+        e.customer_id,
+        c.signed_up_at,
+        e.event_timestamp,
+        e.event_type,
+        e.event_value,
+        e.led_to_purchase,
+
+        --days since signup
+        datediff('day', c.signed_up_at, e.event_timestamp) as days_since_signup,
+
+        --weeks since signup
+        floor(datediff('day', c.signed_up_at, e.event_timestamp) / 7) as weeks_since_signup,
+
+        --event sequence number
+        row_number() over(partition by e.customer_id order by e.event_timestamp) as event_sequence,
+
+        --cluster info
+        cl.cluster_name,
+        cl.persona_hidden
+    from all_events e 
+    inner join customers c on e.customer_id = c.customer_id
+    inner join clusters cl on e.customer_id = cl.customer_id
+),
+
+--create journey timeline string
+journey_timeline as (
+    select 
+        customer_id,
+        cluster_name,
+        persona_hidden,
+        signed_up_at,
+
+        --journey milestones
+        min(case when event_type = 'Session' then event_timestamp end) as first_session,
+        min(case when event_type = 'Purchase' then event_timestamp end) as first_purchase,
+        min(case when event_type = 'Return' then event_timestamp end) as first_return,
+
+        --days to milestones
+        min(case when event_type = 'Session' then days_since_signup end) as days_to_first_session,
+        min(case when event_type = 'Purchase' then days_since_signup end) as days_to_first_purchase,
+        min(case when event_type = 'Return' then days_since_signup end) as days_to_first_return,
+
+        --event counts by week
+        count(case when weeks_since_signup = 0 then 1 end) as week_0_events
+        count(case when weeks_since_signup = 1 then 1 end) as week_1_events,
+        count(case when weeks_since_signup = 2 then 1 end) as week_2_events,
+        count(case when weeks_since_signup = 3 then 1 end) as week_3_events,
+        count(case when weeks_since_signup = 4 then 1 end) as week_4_events,
+
+        --purchase counts by week
+        count(case when weeks_since_signup = 0 and event_type = 'Purchase' then 1 end) as week_0_purchases,
+        count(case when weeks_since_signup = 1 and event_type = 'Purchase' then 1 end) as week_1_purchases,
+        count(case when weeks_since_signup = 2 and event_type = 'Purchase' then 1 end) as week_2_purchases,
+        count(case when weeks_since_signup = 3 and event_type = 'Purchase' then 1 end) as week_3_purchases,
+        count(case when weeks_since_signup = 4 and event_type = 'Purchase' then 1 end) as week_4_purchases
+    from events_with_context
+    group by customer_id, cluster_name, persona_hidden, signed_up_at
+),
+
+--sample journey strings (first 30 days)
+journey_strings as (
+    select 
+        customer_id,
+        cluster_name,
+        string_agg(
+            event_type ||
+            case 
+                when event_type = 'Purchase' then ' ($' || round(event_value, 0) || ')'
+                when event_type = 'Session' then ' (' || round(event_value, 0) || ' views'
+                else ''
+            end ||
+            ' [Day ' || days_since_signup || ']',
+            ' -> '
+            order by event_timestamp 
+        ) as journey_path
+    from events_with_context 
+    where days_since_signup <= 30 --want 1st 30 days only
+    group by customer_id, cluster_name
+)
+
+--combining everything
+select 
+    jt.*,
+    js.journey_path
+from journey_timeline jt 
+left join journey_strings js on jt.customer_id = js.customer_id
+    );
+  
+  
+[0m21:51:14.059967 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_customer_journey__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+sessions as (
+    select * from "stylehub"."main"."stg_sessions"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--combine all events into timeline
+all_events as (
+    select 
+        s.customer_id,
+        s.session_start_at as event_timestamp,
+        'Session' as event_type,
+        s.num_products_viewed as event_value,
+        s.purchased as led_to_purchase,
+    from sessions s 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at as event_timestamp,
+        'Purchase' as event_type,
+        o.total as event_value,
+        true as led_to_purchase
+    from orders o 
+
+    union all 
+
+    select 
+        o.customer_id,
+        o.ordered_at + interval '7 days' as event_timestamp, --assume returns
+        'Return' as event_type,
+        false as led_to_purchase,
+    from orders o 
+    where o.returned = true
+),
+
+--add customer context and calculate days since signup
+events_with_context as (
+    select 
+        e.customer_id,
+        c.signed_up_at,
+        e.event_timestamp,
+        e.event_type,
+        e.event_value,
+        e.led_to_purchase,
+
+        --days since signup
+        datediff('day', c.signed_up_at, e.event_timestamp) as days_since_signup,
+
+        --weeks since signup
+        floor(datediff('day', c.signed_up_at, e.event_timestamp) / 7) as weeks_since_signup,
+
+        --event sequence number
+        row_number() over(partition by e.customer_id order by e.event_timestamp) as event_sequence,
+
+        --cluster info
+        cl.cluster_name,
+        cl.persona_hidden
+    from all_events e 
+    inner join customers c on e.customer_id = c.customer_id
+    inner join clusters cl on e.customer_id = cl.customer_id
+),
+
+--create journey timeline string
+journey_timeline as (
+    select 
+        customer_id,
+        cluster_name,
+        persona_hidden,
+        signed_up_at,
+
+        --journey milestones
+        min(case when event_type = 'Session' then event_timestamp end) as first_session,
+        min(case when event_type = 'Purchase' then event_timestamp end) as first_purchase,
+        min(case when event_type = 'Return' then event_timestamp end) as first_return,
+
+        --days to milestones
+        min(case when event_type = 'Session' then days_since_signup end) as days_to_first_session,
+        min(case when event_type = 'Purchase' then days_since_signup end) as days_to_first_purchase,
+        min(case when event_type = 'Return' then days_since_signup end) as days_to_first_return,
+
+        --event counts by week
+        count(case when weeks_since_signup = 0 then 1 end) as week_0_events
+        count(case when weeks_since_signup = 1 then 1 end) as week_1_events,
+        count(case when weeks_since_signup = 2 then 1 end) as week_2_events,
+        count(case when weeks_since_signup = 3 then 1 end) as week_3_events,
+        count(case when weeks_since_signup = 4 then 1 end) as week_4_events,
+
+        --purchase counts by week
+        count(case when weeks_since_signup = 0 and event_type = 'Purchase' then 1 end) as week_0_purchases,
+        count(case when weeks_since_signup = 1 and event_type = 'Purchase' then 1 end) as week_1_purchases,
+        count(case when weeks_since_signup = 2 and event_type = 'Purchase' then 1 end) as week_2_purchases,
+        count(case when weeks_since_signup = 3 and event_type = 'Purchase' then 1 end) as week_3_purchases,
+        count(case when weeks_since_signup = 4 and event_type = 'Purchase' then 1 end) as week_4_purchases
+    from events_with_context
+    group by customer_id, cluster_name, persona_hidden, signed_up_at
+),
+
+--sample journey strings (first 30 days)
+journey_strings as (
+    select 
+        customer_id,
+        cluster_name,
+        string_agg(
+            event_type ||
+            case 
+                when event_type = 'Purchase' then ' ($' || round(event_value, 0) || ')'
+                when event_type = 'Session' then ' (' || round(event_value, 0) || ' views'
+                else ''
+            end ||
+            ' [Day ' || days_since_signup || ']',
+            ' -> '
+            order by event_timestamp 
+        ) as journey_path
+    from events_with_context 
+    where days_since_signup <= 30 --want 1st 30 days only
+    group by customer_id, cluster_name
+)
+
+--combining everything
+select 
+    jt.*,
+    js.journey_path
+from journey_timeline jt 
+left join journey_strings js on jt.customer_id = js.customer_id
+    );
+  
+  
+[0m21:51:14.060413 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m21:51:14.060742 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: ROLLBACK
+[0m21:51:14.066028 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.rpt_customer_journey'
+[0m21:51:14.066320 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: Close
+[0m21:51:14.068222 [debug] [Thread-1 (]: Runtime Error in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)
+  Parser Error: syntax error at or near "count"
+  
+  LINE 107:         count(case when weeks_since_signup = 1 then 1 end) as week_...
+                    ^
+[0m21:51:14.069701 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d845968-7f0f-4ac5-9cfc-0e624ebbdb25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10672f470>]}
+[0m21:51:14.070243 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.rpt_customer_journey ................ [[31mERROR[0m in 0.05s]
+[0m21:51:14.070692 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_customer_journey
+[0m21:51:14.071039 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.rpt_customer_journey' to be skipped because of status 'error'.  Reason: Runtime Error in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)
+  Parser Error: syntax error at or near "count"
+  
+  LINE 107:         count(case when weeks_since_signup = 1 then 1 end) as week_...
+                    ^.
+[0m21:51:14.072209 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:51:14.072447 [debug] [MainThread]: On master: BEGIN
+[0m21:51:14.072645 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:51:14.073101 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:51:14.073305 [debug] [MainThread]: On master: COMMIT
+[0m21:51:14.073492 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:51:14.073672 [debug] [MainThread]: On master: COMMIT
+[0m21:51:14.073981 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:51:14.074174 [debug] [MainThread]: On master: Close
+[0m21:51:14.074418 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:51:14.074605 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_customer_journey' was properly closed.
+[0m21:51:14.074875 [info ] [MainThread]: 
+[0m21:51:14.075096 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m21:51:14.075883 [debug] [MainThread]: Command end result
+[0m21:51:14.142283 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m21:51:14.143773 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m21:51:14.148342 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m21:51:14.148612 [info ] [MainThread]: 
+[0m21:51:14.148891 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m21:51:14.149115 [info ] [MainThread]: 
+[0m21:51:14.149375 [error] [MainThread]: [31mFailure in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)[0m
+[0m21:51:14.149631 [error] [MainThread]:   Runtime Error in model rpt_customer_journey (models/marts/personas/rpt_customer_journey.sql)
+  Parser Error: syntax error at or near "count"
+  
+  LINE 107:         count(case when weeks_since_signup = 1 then 1 end) as week_...
+                    ^
+[0m21:51:14.150081 [info ] [MainThread]: 
+[0m21:51:14.150312 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/personas/rpt_customer_journey.sql
+[0m21:51:14.150531 [info ] [MainThread]: 
+[0m21:51:14.150945 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:51:14.154987 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.9976737, "process_in_blocks": "0", "process_kernel_time": 0.312543, "process_mem_max_rss": "147210240", "process_out_blocks": "0", "process_user_time": 1.812722}
+[0m21:51:14.155390 [debug] [MainThread]: Command `dbt run` failed at 21:51:14.155320 after 1.00 seconds
+[0m21:51:14.155683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10672f470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11900ed50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11900ffe0>]}
+[0m21:51:14.155961 [debug] [MainThread]: Flushing usage events
+[0m21:51:14.276363 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:53:14.790472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106833ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10950e8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096ddb80>]}
+
+
+============================== 21:53:14.798936 | 8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6 ==============================
+[0m21:53:14.798936 [info ] [MainThread]: Running with dbt=1.11.4
+[0m21:53:14.799461 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'indirect_selection': 'eager', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'static_parser': 'True', 'warn_error': 'None', 'introspect': 'True', 'printer_width': '80', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'invocation_command': 'dbt run --select rpt_customer_journey', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None'}
+[0m21:53:15.061411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109895f70>]}
+[0m21:53:15.109092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093e5b80>]}
+[0m21:53:15.111231 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m21:53:15.200022 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m21:53:15.272948 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:53:15.273505 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/personas/rpt_customer_journey.sql
+[0m21:53:15.470173 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.staging
+- models.stylehub.marts.personas
+- models.stylehub.marts.core
+- models.stylehub.marts.product
+[0m21:53:15.474279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109cff6b0>]}
+[0m21:53:15.518910 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m21:53:15.521152 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m21:53:15.538268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e04d10>]}
+[0m21:53:15.538704 [info ] [MainThread]: Found 8 models, 472 macros
+[0m21:53:15.538973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e15280>]}
+[0m21:53:15.540217 [info ] [MainThread]: 
+[0m21:53:15.540511 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:53:15.540729 [info ] [MainThread]: 
+[0m21:53:15.541088 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m21:53:15.541744 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m21:53:15.600551 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m21:53:15.600943 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m21:53:15.601192 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:53:15.630912 [debug] [ThreadPool]: SQL status: OK in 0.030 seconds
+[0m21:53:15.632364 [debug] [ThreadPool]: On list_stylehub: Close
+[0m21:53:15.632900 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m21:53:15.633241 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m21:53:15.638687 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:53:15.639041 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m21:53:15.639266 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:53:15.640325 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:53:15.641496 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:53:15.641723 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m21:53:15.642078 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:53:15.642268 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:53:15.642453 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m21:53:15.642825 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:53:15.643419 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m21:53:15.643631 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m21:53:15.643818 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m21:53:15.644126 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m21:53:15.644323 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m21:53:15.648370 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m21:53:15.653103 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m21:53:15.653446 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m21:53:15.653661 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:53:15.654259 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m21:53:15.654561 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m21:53:15.654812 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m21:53:15.672475 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m21:53:15.673957 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m21:53:15.675254 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m21:53:15.675496 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m21:53:15.677623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097ba4e0>]}
+[0m21:53:15.679397 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:53:15.679671 [debug] [MainThread]: On master: BEGIN
+[0m21:53:15.679976 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:53:15.680662 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m21:53:15.680953 [debug] [MainThread]: On master: COMMIT
+[0m21:53:15.681280 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:53:15.681573 [debug] [MainThread]: On master: COMMIT
+[0m21:53:15.682034 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:53:15.682286 [debug] [MainThread]: On master: Close
+[0m21:53:15.684743 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_customer_journey
+[0m21:53:15.686973 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_customer_journey ......................... [RUN]
+[0m21:53:15.687411 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_customer_journey)
+[0m21:53:15.687737 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_customer_journey
+[0m21:53:15.694729 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.695923 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_customer_journey
+[0m21:53:15.724536 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.725408 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.725690 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: BEGIN
+[0m21:53:15.725936 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:53:15.726464 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:53:15.726704 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.727147 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_customer_journey__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+
+    select * from "stylehub"."main"."stg_customers"
+
+),
+
+sessions as (
+
+    select * from "stylehub"."main"."stg_sessions"
+
+),
+
+orders as (
+
+    select * from "stylehub"."main"."stg_orders"
+
+),
+
+clusters as (
+
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+
+),
+
+-- Combine all events into timeline
+all_events as (
+
+    -- Session events
+    select
+        s.customer_id,
+        s.session_started_at as event_timestamp,
+        'Session' as event_type,
+        s.num_products_viewed as event_value,
+        s.purchased as led_to_purchase
+    from sessions s
+
+    union all
+
+    -- Purchase events
+    select
+        o.customer_id,
+        o.ordered_at as event_timestamp,
+        'Purchase' as event_type,
+        o.total as event_value,
+        true as led_to_purchase
+    from orders o
+
+    union all
+
+    -- Return events
+    select
+        o.customer_id,
+        o.ordered_at + interval '7 days' as event_timestamp,  -- Assume returns happen 7 days later
+        'Return' as event_type,
+        o.total as event_value,
+        false as led_to_purchase
+    from orders o
+    where o.returned = true
+
+),
+
+-- Add customer context and calculate days since signup
+events_with_context as (
+
+    select
+        e.customer_id,
+        c.signed_up_at,
+        e.event_timestamp,
+        e.event_type,
+        e.event_value,
+        e.led_to_purchase,
+        
+        -- Days since signup
+        datediff('day', c.signed_up_at, e.event_timestamp) as days_since_signup,
+        
+        -- Week since signup  
+        floor(datediff('day', c.signed_up_at, e.event_timestamp) / 7) as week_since_signup,
+        
+        -- Event sequence number
+        row_number() over (partition by e.customer_id order by e.event_timestamp) as event_sequence,
+        
+        -- Cluster info
+        cl.cluster_name,
+        cl.persona_hidden
+
+    from all_events e
+    inner join customers c on e.customer_id = c.customer_id
+    left join clusters cl on e.customer_id = cl.customer_id
+
+),
+
+-- Create journey timeline string
+journey_timeline as (
+
+    select
+        customer_id,
+        cluster_name,
+        persona_hidden,
+        signed_up_at,
+        
+        -- Journey milestones
+        min(case when event_type = 'Session' then event_timestamp end) as first_session,
+        min(case when event_type = 'Purchase' then event_timestamp end) as first_purchase,
+        min(case when event_type = 'Return' then event_timestamp end) as first_return,
+        
+        -- Days to milestones
+        min(case when event_type = 'Session' then days_since_signup end) as days_to_first_session,
+        min(case when event_type = 'Purchase' then days_since_signup end) as days_to_first_purchase,
+        min(case when event_type = 'Return' then days_since_signup end) as days_to_first_return,
+        
+        -- Event counts by week
+        count(case when week_since_signup = 0 then 1 end) as week_0_events,
+        count(case when week_since_signup = 1 then 1 end) as week_1_events,
+        count(case when week_since_signup = 2 then 1 end) as week_2_events,
+        count(case when week_since_signup = 3 then 1 end) as week_3_events,
+        count(case when week_since_signup = 4 then 1 end) as week_4_events,
+        
+        -- Purchase counts by week
+        count(case when week_since_signup = 0 and event_type = 'Purchase' then 1 end) as week_0_purchases,
+        count(case when week_since_signup = 1 and event_type = 'Purchase' then 1 end) as week_1_purchases,
+        count(case when week_since_signup = 2 and event_type = 'Purchase' then 1 end) as week_2_purchases,
+        count(case when week_since_signup = 3 and event_type = 'Purchase' then 1 end) as week_3_purchases,
+        count(case when week_since_signup = 4 and event_type = 'Purchase' then 1 end) as week_4_purchases
+
+    from events_with_context
+    group by customer_id, cluster_name, persona_hidden, signed_up_at
+
+),
+
+-- Sample journey strings (first 30 days)
+journey_strings as (
+
+    select
+        customer_id,
+        cluster_name,
+        string_agg(
+            event_type || 
+            case 
+                when event_type = 'Purchase' then ' ($' || round(event_value, 0) || ')'
+                when event_type = 'Session' then ' (' || round(event_value, 0) || ' views)'
+                else ''
+            end ||
+            ' [Day ' || days_since_signup || ']',
+            ' → '
+            order by event_timestamp
+        ) as journey_path
+
+    from events_with_context
+    where days_since_signup <= 30  -- First 30 days only
+    group by customer_id, cluster_name
+
+)
+
+-- Combine everything
+select
+    jt.*,
+    js.journey_path
+
+from journey_timeline jt
+left join journey_strings js on jt.customer_id = js.customer_id
+    );
+  
+  
+[0m21:53:15.906030 [debug] [Thread-1 (]: SQL status: OK in 0.178 seconds
+[0m21:53:15.911756 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.912117 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+alter table "stylehub"."main"."rpt_customer_journey__dbt_tmp" rename to "rpt_customer_journey"
+[0m21:53:15.913154 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m21:53:15.924554 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: COMMIT
+[0m21:53:15.924917 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.925215 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: COMMIT
+[0m21:53:15.932218 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m21:53:15.937049 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_customer_journey"
+[0m21:53:15.937383 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_customer_journey"} */
+
+      drop table if exists "stylehub"."main"."rpt_customer_journey__dbt_backup" cascade
+    
+[0m21:53:15.938296 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m21:53:15.940322 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_customer_journey: Close
+[0m21:53:15.941889 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8cdfafa1-e6e7-4461-a77a-98eeeb8f62a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a23b3b0>]}
+[0m21:53:15.942434 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.rpt_customer_journey .................... [[32mOK[0m in 0.25s]
+[0m21:53:15.942905 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_customer_journey
+[0m21:53:15.943772 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:53:15.944038 [debug] [MainThread]: On master: BEGIN
+[0m21:53:15.944264 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:53:15.944722 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:53:15.944940 [debug] [MainThread]: On master: COMMIT
+[0m21:53:15.945148 [debug] [MainThread]: Using duckdb connection "master"
+[0m21:53:15.945347 [debug] [MainThread]: On master: COMMIT
+[0m21:53:15.945677 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m21:53:15.945887 [debug] [MainThread]: On master: Close
+[0m21:53:15.946163 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:53:15.946373 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_customer_journey' was properly closed.
+[0m21:53:15.946595 [info ] [MainThread]: 
+[0m21:53:15.946842 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m21:53:15.947348 [debug] [MainThread]: Command end result
+[0m21:53:16.012000 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m21:53:16.013609 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m21:53:16.018771 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m21:53:16.019070 [info ] [MainThread]: 
+[0m21:53:16.019405 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:53:16.019658 [info ] [MainThread]: 
+[0m21:53:16.019929 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:53:16.021863 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.2908412, "process_in_blocks": "0", "process_kernel_time": 0.396596, "process_mem_max_rss": "385318912", "process_out_blocks": "0", "process_user_time": 2.429594}
+[0m21:53:16.022233 [debug] [MainThread]: Command `dbt run` succeeded at 21:53:16.022164 after 1.29 seconds
+[0m21:53:16.022537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d6d760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e3c3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a11d90>]}
+[0m21:53:16.022836 [debug] [MainThread]: Flushing usage events
+[0m21:53:16.154335 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:45:06.680950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069189b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b5b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b5970>]}
+
+
+============================== 13:45:06.690737 | e2d0a893-66a5-4b84-bb00-2759c3a5fef2 ==============================
+[0m13:45:06.690737 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:45:06.691300 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'printer_width': '80', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'use_experimental_parser': 'False', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select rpt_ltv_forecast', 'log_format': 'default', 'write_json': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'introspect': 'True'}
+[0m13:45:06.870015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075dc4a0>]}
+[0m13:45:06.899534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107476810>]}
+[0m13:45:06.900976 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:45:06.965238 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:45:07.018737 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:45:07.019084 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/forecasting/rpt_ltv_forecast.sql
+[0m13:45:07.130757 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.product
+- models.stylehub.marts.personas
+- models.stylehub.marts.core
+- models.stylehub.staging
+[0m13:45:07.133344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106ef740>]}
+[0m13:45:07.163434 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m13:45:07.165288 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m13:45:07.178129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104459d0>]}
+[0m13:45:07.178430 [info ] [MainThread]: Found 9 models, 472 macros
+[0m13:45:07.178603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105ee9c0>]}
+[0m13:45:07.179471 [info ] [MainThread]: 
+[0m13:45:07.179675 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:45:07.179811 [info ] [MainThread]: 
+[0m13:45:07.180074 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:45:07.180510 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m13:45:07.221605 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m13:45:07.221865 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m13:45:07.222021 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:45:07.240785 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m13:45:07.244256 [debug] [ThreadPool]: On list_stylehub: Close
+[0m13:45:07.244694 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m13:45:07.244932 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m13:45:07.248896 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:45:07.249158 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m13:45:07.249362 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:45:07.250348 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m13:45:07.251107 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:45:07.251261 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m13:45:07.251530 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:45:07.251658 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:45:07.251781 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m13:45:07.252239 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:45:07.252639 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m13:45:07.252844 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:45:07.253050 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m13:45:07.253472 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:45:07.253664 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m13:45:07.256812 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m13:45:07.259984 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m13:45:07.260186 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m13:45:07.260315 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:45:07.260762 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:45:07.260917 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m13:45:07.261064 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m13:45:07.286409 [debug] [ThreadPool]: SQL status: OK in 0.024 seconds
+[0m13:45:07.287711 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m13:45:07.288726 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m13:45:07.288917 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m13:45:07.289941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11061ac00>]}
+[0m13:45:07.290233 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:45:07.290384 [debug] [MainThread]: On master: BEGIN
+[0m13:45:07.290513 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:45:07.290877 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:45:07.291011 [debug] [MainThread]: On master: COMMIT
+[0m13:45:07.291139 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:45:07.291258 [debug] [MainThread]: On master: COMMIT
+[0m13:45:07.291528 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:45:07.291673 [debug] [MainThread]: On master: Close
+[0m13:45:07.293306 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:45:07.293592 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_ltv_forecast ............................. [RUN]
+[0m13:45:07.293824 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_ltv_forecast)
+[0m13:45:07.293988 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:45:07.298584 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:45:07.299879 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:45:07.332185 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:45:07.333652 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:45:07.333909 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: BEGIN
+[0m13:45:07.334076 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:45:07.334743 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:45:07.334930 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:45:07.335223 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_ltv_forecast__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+--calculate historical spending patterns by cohort month and persona
+cohort_spend_patterns as (
+    select 
+        date_trunc('month', c.signed_up_at) as cohort_month,
+        cl.cluster_name,
+
+        --months since signup
+        datediff('month', c.signed_up_at, o.ordered_at) as months_since_signup,
+
+        --spending metrics
+        avg(o.total) as avg_order_value,
+        count(*) as orders,
+        sum(o.total) as total_revenue
+    from customers c 
+    inner join clusters cl on c.customer_id = cl.customer_id 
+    inner join orders o on c.customer_id = o.customer_id 
+    where datediff('month', c.signed_up_at, o.ordered_at) <= 12 
+    group by
+        date_trunc('month', c.signed_up_at),
+        cl.cluster_name,
+        datediff('month', c.signed_up_at, o.ordered_at)
+),
+
+--calculates average revenue curve by cluster
+cluster_revenue_curve as (
+    select 
+        cluster_name,
+        months_since_signup,
+        avg(avg_order_value) as typical_order_value,
+        avg(orders) as typical_order_count,
+        avg(total_revenue) as typical_monthly_revenue
+    from cohort_spend_patterns 
+    group by cluster_name, months_since_signup 
+),
+
+--get current customer status
+customer_current_state as (
+    select 
+        c.customer_id,
+        c.signed_up_at,
+        cl.cluster_name,
+        cl.monetary_total as actual_ltv_to_date,
+        cl.frequency_orders as orders_to_date,
+
+        --time metrics
+        datediff('month', c.signed_up_at, date '2023-12-31') as months_active,
+        12 - datediff('month', c.signed_up_at, date '2023-12-31') as months_remaining,
+
+        --last order
+        max(o.ordered_at) as last_order_date,
+        datediff('day', max(o.ordered_at), date '2023-12-31') as days_since_last_order
+    
+    from customers c 
+    left join clusters cl on c.customer_id = cl.customer_id 
+    left join orders o on c.customer_id = o.customer_id 
+    group by 
+        c.customer_id, c.signed_up_at, cl.cluster_name,
+        cl.monetary_total, cl.frequency_orders 
+),
+
+--forecast future revenue
+ltv_forecast as (
+    select 
+        cs.customer_id,
+        cs.signed_up_at,
+        cs.cluster_name,
+        cs.actual_ltv_to_date,
+        cs.orders_to_date,
+        cs.months_active,
+        cs.months_remaining,
+        cs.days_since_last_order,
+
+        --churn probability
+        case
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end as churn_probability,
+
+        --predicted future revenue (sum remaining months)
+        sum(
+            crc.typical_monthly_revenue * 
+            (1 - case
+                when cs.days_since_last_order <= 30 then 0.10
+                when cs.days_since_last_order <= 60 then 0.25
+                when cs.days_since_last_order <= 90 then 0.50
+                when cs.days_since_last_order <= 180 then 0.75
+                else 0.90
+            end)
+        ) over (
+            partition by cs.customer_id 
+        ) as predicted_future_revenue,
+
+        --MoM forecast
+        max(case when crc.months_since_signup = cs.months_active + 1 then crc.typical_monthly_revenue else 0 end) as forecast_month_1,
+        max(case when crc.months_since_signup = cs.months_active + 2 then crc.typical_monthly_revenue else 0 end) as forecast_month_2, 
+        max(case when crc.months_since_signup = cs.months_active + 3 then crc.typical_monthly_revenue else 0 end) as forecast_month_3
+
+    from customer_current_state cs 
+    left join cluster_revenue_curve crc 
+        on cs.cluster_name = crc.cluster_name 
+        and crc.months_since_signup > cs.months_active 
+        and crc.months_since_signup <= 12
+    group by
+        cs.customer_id, cs.signed_up_at, cs.cluster_name,
+        cs.actual_ltv_to_date, cs.orders_to_date, cs.months_active,
+        cs.months_remaining, cs.days_since_last_order
+),
+
+final as (
+    select
+        *,
+
+        --total 12-month LTV forecast
+        actual_ltv_to_date + coalesce(predicted_future_revenue, 0) as predicted_12m_ltv,
+
+        --value tier
+        case 
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 2000 then 'Platinum'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 1000 then 'Gold'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 500 then 'Silver'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 100 then 'Bronze'
+            else 'Basic'
+        end as value_tier,
+
+        --risk flag
+        case 
+            when churn_probability >= 0.50 and actual_ltv_to_date >= 1000 then 'High Value At Risk'
+            when churn_probability >= 0.75 then 'Likely Churned'
+            when churn_probability >= 0.50 then 'At Risk'
+            else 'Healthy'
+        end as risk_status
+    from ltv_forecast
+)
+
+select * from final
+where cluster_name is not null
+    );
+  
+  
+[0m13:45:07.349422 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_ltv_forecast__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+--calculate historical spending patterns by cohort month and persona
+cohort_spend_patterns as (
+    select 
+        date_trunc('month', c.signed_up_at) as cohort_month,
+        cl.cluster_name,
+
+        --months since signup
+        datediff('month', c.signed_up_at, o.ordered_at) as months_since_signup,
+
+        --spending metrics
+        avg(o.total) as avg_order_value,
+        count(*) as orders,
+        sum(o.total) as total_revenue
+    from customers c 
+    inner join clusters cl on c.customer_id = cl.customer_id 
+    inner join orders o on c.customer_id = o.customer_id 
+    where datediff('month', c.signed_up_at, o.ordered_at) <= 12 
+    group by
+        date_trunc('month', c.signed_up_at),
+        cl.cluster_name,
+        datediff('month', c.signed_up_at, o.ordered_at)
+),
+
+--calculates average revenue curve by cluster
+cluster_revenue_curve as (
+    select 
+        cluster_name,
+        months_since_signup,
+        avg(avg_order_value) as typical_order_value,
+        avg(orders) as typical_order_count,
+        avg(total_revenue) as typical_monthly_revenue
+    from cohort_spend_patterns 
+    group by cluster_name, months_since_signup 
+),
+
+--get current customer status
+customer_current_state as (
+    select 
+        c.customer_id,
+        c.signed_up_at,
+        cl.cluster_name,
+        cl.monetary_total as actual_ltv_to_date,
+        cl.frequency_orders as orders_to_date,
+
+        --time metrics
+        datediff('month', c.signed_up_at, date '2023-12-31') as months_active,
+        12 - datediff('month', c.signed_up_at, date '2023-12-31') as months_remaining,
+
+        --last order
+        max(o.ordered_at) as last_order_date,
+        datediff('day', max(o.ordered_at), date '2023-12-31') as days_since_last_order
+    
+    from customers c 
+    left join clusters cl on c.customer_id = cl.customer_id 
+    left join orders o on c.customer_id = o.customer_id 
+    group by 
+        c.customer_id, c.signed_up_at, cl.cluster_name,
+        cl.monetary_total, cl.frequency_orders 
+),
+
+--forecast future revenue
+ltv_forecast as (
+    select 
+        cs.customer_id,
+        cs.signed_up_at,
+        cs.cluster_name,
+        cs.actual_ltv_to_date,
+        cs.orders_to_date,
+        cs.months_active,
+        cs.months_remaining,
+        cs.days_since_last_order,
+
+        --churn probability
+        case
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end as churn_probability,
+
+        --predicted future revenue (sum remaining months)
+        sum(
+            crc.typical_monthly_revenue * 
+            (1 - case
+                when cs.days_since_last_order <= 30 then 0.10
+                when cs.days_since_last_order <= 60 then 0.25
+                when cs.days_since_last_order <= 90 then 0.50
+                when cs.days_since_last_order <= 180 then 0.75
+                else 0.90
+            end)
+        ) over (
+            partition by cs.customer_id 
+        ) as predicted_future_revenue,
+
+        --MoM forecast
+        max(case when crc.months_since_signup = cs.months_active + 1 then crc.typical_monthly_revenue else 0 end) as forecast_month_1,
+        max(case when crc.months_since_signup = cs.months_active + 2 then crc.typical_monthly_revenue else 0 end) as forecast_month_2, 
+        max(case when crc.months_since_signup = cs.months_active + 3 then crc.typical_monthly_revenue else 0 end) as forecast_month_3
+
+    from customer_current_state cs 
+    left join cluster_revenue_curve crc 
+        on cs.cluster_name = crc.cluster_name 
+        and crc.months_since_signup > cs.months_active 
+        and crc.months_since_signup <= 12
+    group by
+        cs.customer_id, cs.signed_up_at, cs.cluster_name,
+        cs.actual_ltv_to_date, cs.orders_to_date, cs.months_active,
+        cs.months_remaining, cs.days_since_last_order
+),
+
+final as (
+    select
+        *,
+
+        --total 12-month LTV forecast
+        actual_ltv_to_date + coalesce(predicted_future_revenue, 0) as predicted_12m_ltv,
+
+        --value tier
+        case 
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 2000 then 'Platinum'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 1000 then 'Gold'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 500 then 'Silver'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 100 then 'Bronze'
+            else 'Basic'
+        end as value_tier,
+
+        --risk flag
+        case 
+            when churn_probability >= 0.50 and actual_ltv_to_date >= 1000 then 'High Value At Risk'
+            when churn_probability >= 0.75 then 'Likely Churned'
+            when churn_probability >= 0.50 then 'At Risk'
+            else 'Healthy'
+        end as risk_status
+    from ltv_forecast
+)
+
+select * from final
+where cluster_name is not null
+    );
+  
+  
+[0m13:45:07.349975 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m13:45:07.350479 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: ROLLBACK
+[0m13:45:07.355093 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.rpt_ltv_forecast'
+[0m13:45:07.355362 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: Close
+[0m13:45:07.356706 [debug] [Thread-1 (]: Runtime Error in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)
+  Binder Error: column "typical_monthly_revenue" must appear in the GROUP BY clause or must be part of an aggregate function.
+  Either add it to the GROUP BY list, or use "ANY_VALUE(typical_monthly_revenue)" if the exact value of "typical_monthly_revenue" is not important.
+  
+  LINE 108:             crc.typical_monthly_revenue * 
+                        ^
+[0m13:45:07.357918 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e2d0a893-66a5-4b84-bb00-2759c3a5fef2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100a3410>]}
+[0m13:45:07.358333 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.rpt_ltv_forecast .................... [[31mERROR[0m in 0.06s]
+[0m13:45:07.358646 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:45:07.358939 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.rpt_ltv_forecast' to be skipped because of status 'error'.  Reason: Runtime Error in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)
+  Binder Error: column "typical_monthly_revenue" must appear in the GROUP BY clause or must be part of an aggregate function.
+  Either add it to the GROUP BY list, or use "ANY_VALUE(typical_monthly_revenue)" if the exact value of "typical_monthly_revenue" is not important.
+  
+  LINE 108:             crc.typical_monthly_revenue * 
+                        ^.
+[0m13:45:07.359908 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:45:07.360077 [debug] [MainThread]: On master: BEGIN
+[0m13:45:07.360209 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:45:07.360603 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:45:07.360741 [debug] [MainThread]: On master: COMMIT
+[0m13:45:07.360865 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:45:07.360982 [debug] [MainThread]: On master: COMMIT
+[0m13:45:07.361186 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:45:07.361316 [debug] [MainThread]: On master: Close
+[0m13:45:07.361482 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:45:07.361601 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_ltv_forecast' was properly closed.
+[0m13:45:07.361736 [info ] [MainThread]: 
+[0m13:45:07.361884 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.18 seconds (0.18s).
+[0m13:45:07.362207 [debug] [MainThread]: Command end result
+[0m13:45:07.435171 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m13:45:07.436301 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m13:45:07.439954 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m13:45:07.440160 [info ] [MainThread]: 
+[0m13:45:07.440356 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m13:45:07.440507 [info ] [MainThread]: 
+[0m13:45:07.440694 [error] [MainThread]: [31mFailure in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)[0m
+[0m13:45:07.440870 [error] [MainThread]:   Runtime Error in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)
+  Binder Error: column "typical_monthly_revenue" must appear in the GROUP BY clause or must be part of an aggregate function.
+  Either add it to the GROUP BY list, or use "ANY_VALUE(typical_monthly_revenue)" if the exact value of "typical_monthly_revenue" is not important.
+  
+  LINE 108:             crc.typical_monthly_revenue * 
+                        ^
+[0m13:45:07.441003 [info ] [MainThread]: 
+[0m13:45:07.441152 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/forecasting/rpt_ltv_forecast.sql
+[0m13:45:07.441278 [info ] [MainThread]: 
+[0m13:45:07.441558 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:45:07.447339 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8094623, "process_in_blocks": "0", "process_kernel_time": 0.262435, "process_mem_max_rss": "146554880", "process_out_blocks": "0", "process_user_time": 1.234938}
+[0m13:45:07.447622 [debug] [MainThread]: Command `dbt run` failed at 13:45:07.447582 after 0.81 seconds
+[0m13:45:07.447815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110d27890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110d26d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110d26de0>]}
+[0m13:45:07.447995 [debug] [MainThread]: Flushing usage events
+[0m13:45:07.604895 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:46:25.970548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080dd040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089e1b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089e1940>]}
+
+
+============================== 13:46:25.977395 | cdae494b-fd62-4ef5-a692-58c88eccf2ec ==============================
+[0m13:46:25.977395 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:46:25.977813 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'write_json': 'True', 'empty': 'False', 'target_path': 'None', 'no_print': 'None', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'warn_error': 'None', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'quiet': 'False', 'invocation_command': 'dbt run --select rpt_ltv_forecast', 'log_format': 'default', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs'}
+[0m13:46:26.162750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a51a60>]}
+[0m13:46:26.192773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ee9b80>]}
+[0m13:46:26.194188 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:46:26.248649 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:46:26.306642 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:46:26.307002 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/forecasting/rpt_ltv_forecast.sql
+[0m13:46:26.412370 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.core
+- models.stylehub.staging
+- models.stylehub.marts.personas
+- models.stylehub.marts.product
+[0m13:46:26.414877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10911f650>]}
+[0m13:46:26.442523 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m13:46:26.444181 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m13:46:26.456934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e1c800>]}
+[0m13:46:26.457231 [info ] [MainThread]: Found 9 models, 472 macros
+[0m13:46:26.457398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090e2900>]}
+[0m13:46:26.458192 [info ] [MainThread]: 
+[0m13:46:26.458368 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:46:26.458505 [info ] [MainThread]: 
+[0m13:46:26.458763 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:46:26.459224 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m13:46:26.487272 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m13:46:26.487512 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m13:46:26.487658 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:46:26.506823 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m13:46:26.507965 [debug] [ThreadPool]: On list_stylehub: Close
+[0m13:46:26.511381 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m13:46:26.511813 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m13:46:26.516001 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:26.516249 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m13:46:26.516388 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:46:26.517267 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m13:46:26.518148 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:26.518294 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m13:46:26.518525 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:26.518656 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:26.518780 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m13:46:26.519029 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:26.519412 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m13:46:26.519542 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:26.519655 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m13:46:26.519853 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:26.519983 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m13:46:26.522598 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m13:46:26.525695 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m13:46:26.525931 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m13:46:26.526060 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:46:26.526406 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:26.526534 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m13:46:26.526665 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m13:46:26.538690 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m13:46:26.539763 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m13:46:26.540777 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m13:46:26.540964 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m13:46:26.542191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a52840>]}
+[0m13:46:26.542465 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:26.542602 [debug] [MainThread]: On master: BEGIN
+[0m13:46:26.542726 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:46:26.543066 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:26.543190 [debug] [MainThread]: On master: COMMIT
+[0m13:46:26.543310 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:26.543424 [debug] [MainThread]: On master: COMMIT
+[0m13:46:26.543625 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:26.543747 [debug] [MainThread]: On master: Close
+[0m13:46:26.545144 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:26.545391 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_ltv_forecast ............................. [RUN]
+[0m13:46:26.545602 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_ltv_forecast)
+[0m13:46:26.545760 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:26.549820 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:26.550725 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:26.566632 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:26.567725 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:26.567924 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: BEGIN
+[0m13:46:26.568082 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:46:26.568449 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:46:26.568597 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:26.568868 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_ltv_forecast__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+--calculate historical spending patterns by cohort month and persona
+cohort_spend_patterns as (
+    select 
+        date_trunc('month', c.signed_up_at) as cohort_month,
+        cl.cluster_name,
+
+        --months since signup
+        datediff('month', c.signed_up_at, o.ordered_at) as months_since_signup,
+
+        --spending metrics
+        avg(o.total) as avg_order_value,
+        count(*) as orders,
+        sum(o.total) as total_revenue
+    from customers c 
+    inner join clusters cl on c.customer_id = cl.customer_id 
+    inner join orders o on c.customer_id = o.customer_id 
+    where datediff('month', c.signed_up_at, o.ordered_at) <= 12 
+    group by
+        date_trunc('month', c.signed_up_at),
+        cl.cluster_name,
+        datediff('month', c.signed_up_at, o.ordered_at)
+),
+
+--calculates average revenue curve by cluster
+cluster_revenue_curve as (
+    select 
+        cluster_name,
+        months_since_signup,
+        avg(avg_order_value) as typical_order_value,
+        avg(orders) as typical_order_count,
+        avg(total_revenue) as typical_monthly_revenue
+    from cohort_spend_patterns 
+    group by cluster_name, months_since_signup 
+),
+
+--get current customer status
+customer_current_state as (
+    select 
+        c.customer_id,
+        c.signed_up_at,
+        cl.cluster_name,
+        cl.monetary_total as actual_ltv_to_date,
+        cl.frequency_orders as orders_to_date,
+
+        --time metrics
+        datediff('month', c.signed_up_at, date '2023-12-31') as months_active,
+        12 - datediff('month', c.signed_up_at, date '2023-12-31') as months_remaining,
+
+        --last order
+        max(o.ordered_at) as last_order_date,
+        datediff('day', max(o.ordered_at), date '2023-12-31') as days_since_last_order
+    
+    from customers c 
+    left join clusters cl on c.customer_id = cl.customer_id 
+    left join orders o on c.customer_id = o.customer_id 
+    group by 
+        c.customer_id, c.signed_up_at, cl.cluster_name,
+        cl.monetary_total, cl.frequency_orders 
+),
+
+--forecast future revenue
+ltv_forecast as (
+    select 
+        cs.customer_id,
+        cs.signed_up_at,
+        cs.cluster_name,
+        cs.actual_ltv_to_date,
+        cs.orders_to_date,
+        cs.months_active,
+        cs.months_remaining,
+        cs.days_since_last_order,
+
+        --churn probability
+        case
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end as churn_probability,
+
+        --predicted future revenue (sum remaining months)
+        sum(
+            crc.typical_monthly_revenue * 
+            (1 - case
+                when cs.days_since_last_order <= 30 then 0.10
+                when cs.days_since_last_order <= 60 then 0.25
+                when cs.days_since_last_order <= 90 then 0.50
+                when cs.days_since_last_order <= 180 then 0.75
+                else 0.90
+            end)
+        ) over (
+            partition by cs.customer_id 
+        ) as predicted_future_revenue,
+
+        --MoM forecast
+        max(case when crc.months_since_signup = cs.months_active + 1 then crc.typical_monthly_revenue else 0 end) as forecast_month_1,
+        max(case when crc.months_since_signup = cs.months_active + 2 then crc.typical_monthly_revenue else 0 end) as forecast_month_2, 
+        max(case when crc.months_since_signup = cs.months_active + 3 then crc.typical_monthly_revenue else 0 end) as forecast_month_3
+
+    from customer_current_state cs 
+    left join cluster_revenue_curve crc 
+        on cs.cluster_name = crc.cluster_name 
+        and crc.months_since_signup > cs.months_active 
+        and crc.months_since_signup <= 12
+    group by
+        cs.customer_id, cs.signed_up_at, cs.cluster_name,
+        cs.actual_ltv_to_date, cs.orders_to_date, cs.months_active,
+        cs.months_remaining, cs.days_since_last_order, crc.typical_monthly_revenuexs
+),
+
+final as (
+    select
+        *,
+
+        --total 12-month LTV forecast
+        actual_ltv_to_date + coalesce(predicted_future_revenue, 0) as predicted_12m_ltv,
+
+        --value tier
+        case 
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 2000 then 'Platinum'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 1000 then 'Gold'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 500 then 'Silver'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 100 then 'Bronze'
+            else 'Basic'
+        end as value_tier,
+
+        --risk flag
+        case 
+            when churn_probability >= 0.50 and actual_ltv_to_date >= 1000 then 'High Value At Risk'
+            when churn_probability >= 0.75 then 'Likely Churned'
+            when churn_probability >= 0.50 then 'At Risk'
+            else 'Healthy'
+        end as risk_status
+    from ltv_forecast
+)
+
+select * from final
+where cluster_name is not null
+    );
+  
+  
+[0m13:46:26.575220 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_ltv_forecast__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+--calculate historical spending patterns by cohort month and persona
+cohort_spend_patterns as (
+    select 
+        date_trunc('month', c.signed_up_at) as cohort_month,
+        cl.cluster_name,
+
+        --months since signup
+        datediff('month', c.signed_up_at, o.ordered_at) as months_since_signup,
+
+        --spending metrics
+        avg(o.total) as avg_order_value,
+        count(*) as orders,
+        sum(o.total) as total_revenue
+    from customers c 
+    inner join clusters cl on c.customer_id = cl.customer_id 
+    inner join orders o on c.customer_id = o.customer_id 
+    where datediff('month', c.signed_up_at, o.ordered_at) <= 12 
+    group by
+        date_trunc('month', c.signed_up_at),
+        cl.cluster_name,
+        datediff('month', c.signed_up_at, o.ordered_at)
+),
+
+--calculates average revenue curve by cluster
+cluster_revenue_curve as (
+    select 
+        cluster_name,
+        months_since_signup,
+        avg(avg_order_value) as typical_order_value,
+        avg(orders) as typical_order_count,
+        avg(total_revenue) as typical_monthly_revenue
+    from cohort_spend_patterns 
+    group by cluster_name, months_since_signup 
+),
+
+--get current customer status
+customer_current_state as (
+    select 
+        c.customer_id,
+        c.signed_up_at,
+        cl.cluster_name,
+        cl.monetary_total as actual_ltv_to_date,
+        cl.frequency_orders as orders_to_date,
+
+        --time metrics
+        datediff('month', c.signed_up_at, date '2023-12-31') as months_active,
+        12 - datediff('month', c.signed_up_at, date '2023-12-31') as months_remaining,
+
+        --last order
+        max(o.ordered_at) as last_order_date,
+        datediff('day', max(o.ordered_at), date '2023-12-31') as days_since_last_order
+    
+    from customers c 
+    left join clusters cl on c.customer_id = cl.customer_id 
+    left join orders o on c.customer_id = o.customer_id 
+    group by 
+        c.customer_id, c.signed_up_at, cl.cluster_name,
+        cl.monetary_total, cl.frequency_orders 
+),
+
+--forecast future revenue
+ltv_forecast as (
+    select 
+        cs.customer_id,
+        cs.signed_up_at,
+        cs.cluster_name,
+        cs.actual_ltv_to_date,
+        cs.orders_to_date,
+        cs.months_active,
+        cs.months_remaining,
+        cs.days_since_last_order,
+
+        --churn probability
+        case
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end as churn_probability,
+
+        --predicted future revenue (sum remaining months)
+        sum(
+            crc.typical_monthly_revenue * 
+            (1 - case
+                when cs.days_since_last_order <= 30 then 0.10
+                when cs.days_since_last_order <= 60 then 0.25
+                when cs.days_since_last_order <= 90 then 0.50
+                when cs.days_since_last_order <= 180 then 0.75
+                else 0.90
+            end)
+        ) over (
+            partition by cs.customer_id 
+        ) as predicted_future_revenue,
+
+        --MoM forecast
+        max(case when crc.months_since_signup = cs.months_active + 1 then crc.typical_monthly_revenue else 0 end) as forecast_month_1,
+        max(case when crc.months_since_signup = cs.months_active + 2 then crc.typical_monthly_revenue else 0 end) as forecast_month_2, 
+        max(case when crc.months_since_signup = cs.months_active + 3 then crc.typical_monthly_revenue else 0 end) as forecast_month_3
+
+    from customer_current_state cs 
+    left join cluster_revenue_curve crc 
+        on cs.cluster_name = crc.cluster_name 
+        and crc.months_since_signup > cs.months_active 
+        and crc.months_since_signup <= 12
+    group by
+        cs.customer_id, cs.signed_up_at, cs.cluster_name,
+        cs.actual_ltv_to_date, cs.orders_to_date, cs.months_active,
+        cs.months_remaining, cs.days_since_last_order, crc.typical_monthly_revenuexs
+),
+
+final as (
+    select
+        *,
+
+        --total 12-month LTV forecast
+        actual_ltv_to_date + coalesce(predicted_future_revenue, 0) as predicted_12m_ltv,
+
+        --value tier
+        case 
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 2000 then 'Platinum'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 1000 then 'Gold'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 500 then 'Silver'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 100 then 'Bronze'
+            else 'Basic'
+        end as value_tier,
+
+        --risk flag
+        case 
+            when churn_probability >= 0.50 and actual_ltv_to_date >= 1000 then 'High Value At Risk'
+            when churn_probability >= 0.75 then 'Likely Churned'
+            when churn_probability >= 0.50 then 'At Risk'
+            else 'Healthy'
+        end as risk_status
+    from ltv_forecast
+)
+
+select * from final
+where cluster_name is not null
+    );
+  
+  
+[0m13:46:26.575678 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m13:46:26.575942 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: ROLLBACK
+[0m13:46:26.580829 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.rpt_ltv_forecast'
+[0m13:46:26.581044 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: Close
+[0m13:46:26.582328 [debug] [Thread-1 (]: Runtime Error in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)
+  Binder Error: Values list "crc" does not have a column named "typical_monthly_revenuexs"
+  
+  LINE 133:         cs.months_remaining, cs.days_since_last_order, crc.typical_monthly_revenuexs
+                                                                   ^
+[0m13:46:26.583544 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdae494b-fd62-4ef5-a692-58c88eccf2ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f93410>]}
+[0m13:46:26.583881 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.rpt_ltv_forecast .................... [[31mERROR[0m in 0.04s]
+[0m13:46:26.584173 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:26.584437 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.rpt_ltv_forecast' to be skipped because of status 'error'.  Reason: Runtime Error in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)
+  Binder Error: Values list "crc" does not have a column named "typical_monthly_revenuexs"
+  
+  LINE 133:         cs.months_remaining, cs.days_since_last_order, crc.typical_monthly_revenuexs
+                                                                   ^.
+[0m13:46:26.585601 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:26.585779 [debug] [MainThread]: On master: BEGIN
+[0m13:46:26.585912 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:46:26.586242 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:26.586377 [debug] [MainThread]: On master: COMMIT
+[0m13:46:26.586504 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:26.586618 [debug] [MainThread]: On master: COMMIT
+[0m13:46:26.586809 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:26.586938 [debug] [MainThread]: On master: Close
+[0m13:46:26.587103 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:46:26.587224 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_ltv_forecast' was properly closed.
+[0m13:46:26.587352 [info ] [MainThread]: 
+[0m13:46:26.587495 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m13:46:26.587803 [debug] [MainThread]: Command end result
+[0m13:46:26.635979 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m13:46:26.637099 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m13:46:26.640764 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m13:46:26.641008 [info ] [MainThread]: 
+[0m13:46:26.641210 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m13:46:26.641364 [info ] [MainThread]: 
+[0m13:46:26.641547 [error] [MainThread]: [31mFailure in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)[0m
+[0m13:46:26.641723 [error] [MainThread]:   Runtime Error in model rpt_ltv_forecast (models/marts/forecasting/rpt_ltv_forecast.sql)
+  Binder Error: Values list "crc" does not have a column named "typical_monthly_revenuexs"
+  
+  LINE 133:         cs.months_remaining, cs.days_since_last_order, crc.typical_monthly_revenuexs
+                                                                   ^
+[0m13:46:26.641861 [info ] [MainThread]: 
+[0m13:46:26.642037 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/forecasting/rpt_ltv_forecast.sql
+[0m13:46:26.642167 [info ] [MainThread]: 
+[0m13:46:26.642316 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:46:26.643757 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.7123931, "process_in_blocks": "0", "process_kernel_time": 0.207762, "process_mem_max_rss": "148701184", "process_out_blocks": "0", "process_user_time": 1.162031}
+[0m13:46:26.643969 [debug] [MainThread]: Command `dbt run` failed at 13:46:26.643932 after 0.71 seconds
+[0m13:46:26.644140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108742690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109552cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109552e10>]}
+[0m13:46:26.644303 [debug] [MainThread]: Flushing usage events
+[0m13:46:26.839911 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:46:40.589264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c2cb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151b5e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151b5be0>]}
+
+
+============================== 13:46:40.597277 | 262e5c66-4ed5-4996-bcaf-1ff409f02f90 ==============================
+[0m13:46:40.597277 [info ] [MainThread]: Running with dbt=1.11.4
+[0m13:46:40.597625 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'printer_width': '80', 'no_print': 'None', 'debug': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'target_path': 'None', 'empty': 'False', 'invocation_command': 'dbt run --select rpt_ltv_forecast', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'static_parser': 'True', 'version_check': 'True', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'write_json': 'True'}
+[0m13:46:40.759602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115240fe0>]}
+[0m13:46:40.789707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150748c0>]}
+[0m13:46:40.791839 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m13:46:40.855564 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m13:46:40.902909 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:46:40.903303 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/forecasting/rpt_ltv_forecast.sql
+[0m13:46:41.011112 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.product
+- models.stylehub.staging
+- models.stylehub.marts.core
+- models.stylehub.marts.personas
+[0m13:46:41.013975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11577a630>]}
+[0m13:46:41.177520 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m13:46:41.178965 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m13:46:41.194499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11614d160>]}
+[0m13:46:41.194786 [info ] [MainThread]: Found 9 models, 472 macros
+[0m13:46:41.194967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115741250>]}
+[0m13:46:41.195756 [info ] [MainThread]: 
+[0m13:46:41.195932 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:46:41.196073 [info ] [MainThread]: 
+[0m13:46:41.196312 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:46:41.196720 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m13:46:41.222682 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m13:46:41.222945 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m13:46:41.223214 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:46:41.241536 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m13:46:41.242591 [debug] [ThreadPool]: On list_stylehub: Close
+[0m13:46:41.242959 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m13:46:41.243201 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m13:46:41.246499 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:41.246678 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m13:46:41.246808 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:46:41.247615 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m13:46:41.248242 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:41.248393 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m13:46:41.248632 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:41.248759 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:41.248884 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m13:46:41.249354 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:41.249788 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m13:46:41.249926 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m13:46:41.250044 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m13:46:41.250247 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:41.250378 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m13:46:41.253019 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m13:46:41.255929 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m13:46:41.256138 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m13:46:41.256269 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:46:41.256603 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:46:41.256735 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m13:46:41.256870 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m13:46:41.268567 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m13:46:41.269357 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m13:46:41.270259 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m13:46:41.270425 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m13:46:41.271477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11641aed0>]}
+[0m13:46:41.271749 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:41.271901 [debug] [MainThread]: On master: BEGIN
+[0m13:46:41.272033 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:46:41.272336 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:41.272469 [debug] [MainThread]: On master: COMMIT
+[0m13:46:41.272596 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:41.272716 [debug] [MainThread]: On master: COMMIT
+[0m13:46:41.272912 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:41.273037 [debug] [MainThread]: On master: Close
+[0m13:46:41.274302 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:41.274561 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_ltv_forecast ............................. [RUN]
+[0m13:46:41.274771 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_ltv_forecast)
+[0m13:46:41.274933 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:41.278998 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.279472 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:41.295528 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.296447 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.296643 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: BEGIN
+[0m13:46:41.296802 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:46:41.297177 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:46:41.297328 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.297599 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_ltv_forecast__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+--calculate historical spending patterns by cohort month and persona
+cohort_spend_patterns as (
+    select 
+        date_trunc('month', c.signed_up_at) as cohort_month,
+        cl.cluster_name,
+
+        --months since signup
+        datediff('month', c.signed_up_at, o.ordered_at) as months_since_signup,
+
+        --spending metrics
+        avg(o.total) as avg_order_value,
+        count(*) as orders,
+        sum(o.total) as total_revenue
+    from customers c 
+    inner join clusters cl on c.customer_id = cl.customer_id 
+    inner join orders o on c.customer_id = o.customer_id 
+    where datediff('month', c.signed_up_at, o.ordered_at) <= 12 
+    group by
+        date_trunc('month', c.signed_up_at),
+        cl.cluster_name,
+        datediff('month', c.signed_up_at, o.ordered_at)
+),
+
+--calculates average revenue curve by cluster
+cluster_revenue_curve as (
+    select 
+        cluster_name,
+        months_since_signup,
+        avg(avg_order_value) as typical_order_value,
+        avg(orders) as typical_order_count,
+        avg(total_revenue) as typical_monthly_revenue
+    from cohort_spend_patterns 
+    group by cluster_name, months_since_signup 
+),
+
+--get current customer status
+customer_current_state as (
+    select 
+        c.customer_id,
+        c.signed_up_at,
+        cl.cluster_name,
+        cl.monetary_total as actual_ltv_to_date,
+        cl.frequency_orders as orders_to_date,
+
+        --time metrics
+        datediff('month', c.signed_up_at, date '2023-12-31') as months_active,
+        12 - datediff('month', c.signed_up_at, date '2023-12-31') as months_remaining,
+
+        --last order
+        max(o.ordered_at) as last_order_date,
+        datediff('day', max(o.ordered_at), date '2023-12-31') as days_since_last_order
+    
+    from customers c 
+    left join clusters cl on c.customer_id = cl.customer_id 
+    left join orders o on c.customer_id = o.customer_id 
+    group by 
+        c.customer_id, c.signed_up_at, cl.cluster_name,
+        cl.monetary_total, cl.frequency_orders 
+),
+
+--forecast future revenue
+ltv_forecast as (
+    select 
+        cs.customer_id,
+        cs.signed_up_at,
+        cs.cluster_name,
+        cs.actual_ltv_to_date,
+        cs.orders_to_date,
+        cs.months_active,
+        cs.months_remaining,
+        cs.days_since_last_order,
+
+        --churn probability
+        case
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end as churn_probability,
+
+        --predicted future revenue (sum remaining months)
+        sum(
+            crc.typical_monthly_revenue * 
+            (1 - case
+                when cs.days_since_last_order <= 30 then 0.10
+                when cs.days_since_last_order <= 60 then 0.25
+                when cs.days_since_last_order <= 90 then 0.50
+                when cs.days_since_last_order <= 180 then 0.75
+                else 0.90
+            end)
+        ) over (
+            partition by cs.customer_id 
+        ) as predicted_future_revenue,
+
+        --MoM forecast
+        max(case when crc.months_since_signup = cs.months_active + 1 then crc.typical_monthly_revenue else 0 end) as forecast_month_1,
+        max(case when crc.months_since_signup = cs.months_active + 2 then crc.typical_monthly_revenue else 0 end) as forecast_month_2, 
+        max(case when crc.months_since_signup = cs.months_active + 3 then crc.typical_monthly_revenue else 0 end) as forecast_month_3
+
+    from customer_current_state cs 
+    left join cluster_revenue_curve crc 
+        on cs.cluster_name = crc.cluster_name 
+        and crc.months_since_signup > cs.months_active 
+        and crc.months_since_signup <= 12
+    group by
+        cs.customer_id, cs.signed_up_at, cs.cluster_name,
+        cs.actual_ltv_to_date, cs.orders_to_date, cs.months_active,
+        cs.months_remaining, cs.days_since_last_order, crc.typical_monthly_revenue
+),
+
+final as (
+    select
+        *,
+
+        --total 12-month LTV forecast
+        actual_ltv_to_date + coalesce(predicted_future_revenue, 0) as predicted_12m_ltv,
+
+        --value tier
+        case 
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 2000 then 'Platinum'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 1000 then 'Gold'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 500 then 'Silver'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 100 then 'Bronze'
+            else 'Basic'
+        end as value_tier,
+
+        --risk flag
+        case 
+            when churn_probability >= 0.50 and actual_ltv_to_date >= 1000 then 'High Value At Risk'
+            when churn_probability >= 0.75 then 'Likely Churned'
+            when churn_probability >= 0.50 then 'At Risk'
+            else 'Healthy'
+        end as risk_status
+    from ltv_forecast
+)
+
+select * from final
+where cluster_name is not null
+    );
+  
+  
+[0m13:46:41.375917 [debug] [Thread-1 (]: SQL status: OK in 0.078 seconds
+[0m13:46:41.379256 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.379455 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+alter table "stylehub"."main"."rpt_ltv_forecast__dbt_tmp" rename to "rpt_ltv_forecast"
+[0m13:46:41.380299 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:46:41.386463 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: COMMIT
+[0m13:46:41.386674 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.386840 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: COMMIT
+[0m13:46:41.392345 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m13:46:41.395536 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast"
+[0m13:46:41.395772 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast"} */
+
+      drop table if exists "stylehub"."main"."rpt_ltv_forecast__dbt_backup" cascade
+    
+[0m13:46:41.396406 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m13:46:41.397671 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast: Close
+[0m13:46:41.398733 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '262e5c66-4ed5-4996-bcaf-1ff409f02f90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116a2d760>]}
+[0m13:46:41.399075 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.rpt_ltv_forecast ........................ [[32mOK[0m in 0.12s]
+[0m13:46:41.399354 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_ltv_forecast
+[0m13:46:41.399925 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:41.400074 [debug] [MainThread]: On master: BEGIN
+[0m13:46:41.400199 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:46:41.400524 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:41.400655 [debug] [MainThread]: On master: COMMIT
+[0m13:46:41.400783 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:46:41.400902 [debug] [MainThread]: On master: COMMIT
+[0m13:46:41.401106 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:46:41.401233 [debug] [MainThread]: On master: Close
+[0m13:46:41.401398 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:46:41.401515 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_ltv_forecast' was properly closed.
+[0m13:46:41.401651 [info ] [MainThread]: 
+[0m13:46:41.401799 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m13:46:41.402100 [debug] [MainThread]: Command end result
+[0m13:46:41.457493 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m13:46:41.458529 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m13:46:41.461685 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m13:46:41.461880 [info ] [MainThread]: 
+[0m13:46:41.462069 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:46:41.462203 [info ] [MainThread]: 
+[0m13:46:41.462348 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m13:46:41.463749 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.9184541, "process_in_blocks": "0", "process_kernel_time": 0.234154, "process_mem_max_rss": "264110080", "process_out_blocks": "0", "process_user_time": 1.299477}
+[0m13:46:41.463968 [debug] [MainThread]: Command `dbt run` succeeded at 13:46:41.463928 after 0.92 seconds
+[0m13:46:41.464138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116a4ffb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116a4ec30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116a4ec00>]}
+[0m13:46:41.464300 [debug] [MainThread]: Flushing usage events
+[0m13:46:41.568018 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:04:35.370213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10662b710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ce1b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ce1940>]}
+
+
+============================== 14:04:35.378761 | c8e2334d-beaa-42c4-9421-daccff678c77 ==============================
+[0m14:04:35.378761 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:04:35.379184 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'target_path': 'None', 'write_json': 'True', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'empty': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'no_print': 'None', 'static_parser': 'True', 'invocation_command': 'dbt run --select rpt_ltv_forecast_v2', 'debug': 'False'}
+[0m14:04:35.581163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de6870>]}
+[0m14:04:35.610489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d83680>]}
+[0m14:04:35.611950 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:04:35.666023 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:04:35.714114 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:04:35.714425 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/forecasting/rpt_ltv_forecast_v2.sql
+[0m14:04:35.820994 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.staging
+- models.stylehub.marts.personas
+- models.stylehub.marts.product
+- models.stylehub.marts.core
+[0m14:04:35.823505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10741ba40>]}
+[0m14:04:35.851149 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:04:35.852765 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:04:35.865047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107402270>]}
+[0m14:04:35.865323 [info ] [MainThread]: Found 10 models, 472 macros
+[0m14:04:35.865497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10711f1a0>]}
+[0m14:04:35.866294 [info ] [MainThread]: 
+[0m14:04:35.866473 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:04:35.866612 [info ] [MainThread]: 
+[0m14:04:35.866846 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:04:35.867258 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:04:35.894960 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:04:35.895204 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:04:35.895352 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:04:35.918834 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m14:04:35.919843 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:04:35.920226 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:04:35.920474 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:04:35.924253 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:04:35.924469 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:04:35.924610 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:04:35.925328 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:04:35.926134 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:04:35.926278 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:04:35.926510 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:04:35.926632 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:04:35.926755 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:04:35.927099 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:04:35.927481 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:04:35.927874 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:04:35.928037 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:04:35.928283 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:04:35.928426 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:04:35.931046 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:04:35.933789 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:04:35.933958 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:04:35.934090 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:04:35.934395 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:04:35.934573 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:04:35.934725 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:04:35.947459 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m14:04:35.948637 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:04:35.949655 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:04:35.949822 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:04:35.950997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107794a10>]}
+[0m14:04:35.951230 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:04:35.951366 [debug] [MainThread]: On master: BEGIN
+[0m14:04:35.951485 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:04:35.951772 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:04:35.951906 [debug] [MainThread]: On master: COMMIT
+[0m14:04:35.952036 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:04:35.952164 [debug] [MainThread]: On master: COMMIT
+[0m14:04:35.952366 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:04:35.952497 [debug] [MainThread]: On master: Close
+[0m14:04:35.954138 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_ltv_forecast_v2
+[0m14:04:35.954450 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_ltv_forecast_v2 .......................... [RUN]
+[0m14:04:35.954778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_ltv_forecast_v2)
+[0m14:04:35.954945 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_ltv_forecast_v2
+[0m14:04:35.959322 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:35.959796 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_ltv_forecast_v2
+[0m14:04:35.975952 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:35.976717 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:35.976893 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: BEGIN
+[0m14:04:35.977049 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:04:35.977702 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:04:35.978008 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:35.978260 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast_v2"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_ltv_forecast_v2__dbt_tmp"
+  
+    as (
+      
+
+with customers as (
+    select * from "stylehub"."main"."stg_customers"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+--get current customer status
+customer_current_state as (
+    select 
+        c.customer_id,
+        c.signed_up_at,
+        cl.cluster_name,
+        cl.monetary_total as actual_ltv_to_date,
+        cl.frequency_orders as orders_to_date,
+        cl.total_sessions,
+
+        --time metrics
+        datediff('month', c.signed_up_at, date '2023-12-31') as months_active,
+
+        --last order
+        max(o.ordered_at) as last_order_date,
+        datediff('day', max(o.ordered_at), date '2023-12-31') as days_since_last_order
+    from customers c 
+    left join clusters cl on c.customer_id = cl.customer_id 
+    left join orders o on c.customer_id = o.customer_id 
+    where cl.cluster_name is not null 
+    group by 
+        c.customer_id, c.signed_up_at, cl.cluster_name,
+        cl.monetary_total, cl.frequency_orders, cl.total_sessions 
+),
+
+--calculate average spending velocity by cluster ($ per month active)
+cluster_monthly_velocity as (
+    select 
+        cluster_name,
+        avg(actual_ltv_to_date / nullif(months_active, 0)) as avg_monthly_spend
+    from customer_current_state 
+    where months_active > 0
+    group by cluster_name 
+),
+
+--forecast based on monthly velocity
+ltv_forecast as (
+    select 
+        cs.customer_id,
+        cs.signed_up_at,
+        cs.cluster_name,
+        cs.actual_ltv_to_date,
+        cs.orders_to_date,
+        cs.total_sessions,
+        cs.months_active,
+        cs.days_since_last_order,
+
+        --churn probability (higher if inactive)
+        case 
+            when cs.days_since_last_order is null then 1.0 -- never purchased
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end as churn_probability,
+
+        --simple forecast: monthly velocity * months remaining * (1 - churn_probability)
+        cmv.avg_monthly_spend *
+        greatest(0, 12 - cs.months_active) *
+        (1 - case
+            when cs.days_since_last_order is null then 1.0
+            when cs.days_since_last_order <= 30 then 0.10
+            when cs.days_since_last_order <= 60 then 0.25
+            when cs.days_since_last_order <= 90 then 0.50
+            when cs.days_since_last_order <= 180 then 0.75
+            else 0.90
+        end) as predicted_future_revenue,
+
+        cmv.avg_monthly_spend
+    from customer_current_state cs 
+    left join cluster_monthly_velocity cmv on cs.cluster_name = cmv.cluster_name
+),
+
+final as (
+    select 
+        *,
+
+        --total 12-month LTV forecast
+        actual_ltv_to_date + coalesce(predicted_future_revenue, 0) as predicted_12m_ltv,
+
+        --value tier
+        case 
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 2000 then 'Platinum'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 1000 then 'Gold'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 500 then 'Silver'
+            when actual_ltv_to_date + coalesce(predicted_future_revenue, 0) >= 100 then 'Bronze'
+            else 'Basic'
+        end as value_tier,
+
+        --risk flag
+        case 
+            when churn_probability >= 0.50 and actual_ltv_to_date >= 1000 then 'High Value At Risk'
+            when churn_probability >= 0.75 then 'Likely Churned'
+            when churn_probability >+ 0.50 then 'At Risk'
+            else 'Healthy'
+        end as risk_status
+    from ltv_forecast
+)
+
+select * from final
+    );
+  
+  
+[0m14:04:36.010575 [debug] [Thread-1 (]: SQL status: OK in 0.032 seconds
+[0m14:04:36.014408 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:36.014662 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast_v2"} */
+alter table "stylehub"."main"."rpt_ltv_forecast_v2__dbt_tmp" rename to "rpt_ltv_forecast_v2"
+[0m14:04:36.015628 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:04:36.022641 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: COMMIT
+[0m14:04:36.022932 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:36.023099 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: COMMIT
+[0m14:04:36.026813 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m14:04:36.030352 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_ltv_forecast_v2"
+[0m14:04:36.030728 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_ltv_forecast_v2"} */
+
+      drop table if exists "stylehub"."main"."rpt_ltv_forecast_v2__dbt_backup" cascade
+    
+[0m14:04:36.031333 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:04:36.032903 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_ltv_forecast_v2: Close
+[0m14:04:36.036344 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8e2334d-beaa-42c4-9421-daccff678c77', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10438ec30>]}
+[0m14:04:36.036764 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.rpt_ltv_forecast_v2 ..................... [[32mOK[0m in 0.08s]
+[0m14:04:36.037048 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_ltv_forecast_v2
+[0m14:04:36.037631 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:04:36.037802 [debug] [MainThread]: On master: BEGIN
+[0m14:04:36.037939 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:04:36.038283 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:04:36.038417 [debug] [MainThread]: On master: COMMIT
+[0m14:04:36.038542 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:04:36.038661 [debug] [MainThread]: On master: COMMIT
+[0m14:04:36.038873 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:04:36.038998 [debug] [MainThread]: On master: Close
+[0m14:04:36.039162 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:04:36.039285 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_ltv_forecast_v2' was properly closed.
+[0m14:04:36.039420 [info ] [MainThread]: 
+[0m14:04:36.039576 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m14:04:36.039929 [debug] [MainThread]: Command end result
+[0m14:04:36.090052 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:04:36.091233 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:04:36.094518 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:04:36.094684 [info ] [MainThread]: 
+[0m14:04:36.094878 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:04:36.095017 [info ] [MainThread]: 
+[0m14:04:36.095189 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:04:36.096719 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.76723146, "process_in_blocks": "0", "process_kernel_time": 0.226774, "process_mem_max_rss": "181010432", "process_out_blocks": "0", "process_user_time": 1.197626}
+[0m14:04:36.096936 [debug] [MainThread]: Command `dbt run` succeeded at 14:04:36.096896 after 0.77 seconds
+[0m14:04:36.097107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aebfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10787f8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10787ec00>]}
+[0m14:04:36.097270 [debug] [MainThread]: Flushing usage events
+[0m14:04:36.205795 [debug] [MainThread]: An error was encountered while trying to flush usage events
