@@ -5485,3 +5485,2546 @@ alter table "stylehub"."main"."rpt_ltv_forecast_v2__dbt_tmp" rename to "rpt_ltv_
 [0m14:04:36.097107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aebfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10787f8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10787ec00>]}
 [0m14:04:36.097270 [debug] [MainThread]: Flushing usage events
 [0m14:04:36.205795 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:08:40.998197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103382180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104925b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104925940>]}
+
+
+============================== 14:08:41.008125 | 64ff59ed-aa37-4230-997c-d52f49ffdfb1 ==============================
+[0m14:08:41.008125 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:08:41.008539 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'log_format': 'default', 'version_check': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select rpt_product_affinity', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'use_colors': 'True', 'quiet': 'False', 'write_json': 'True', 'no_print': 'None', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'introspect': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80'}
+[0m14:08:41.540455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64ff59ed-aa37-4230-997c-d52f49ffdfb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10494c080>]}
+[0m14:08:41.569113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64ff59ed-aa37-4230-997c-d52f49ffdfb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042e7c80>]}
+[0m14:08:41.570510 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:08:41.637920 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:08:41.686180 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m14:08:41.686520 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/product/rpt_product_affinity.SQL
+[0m14:08:41.773210 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.stylehub_dbt.rpt_product_affinity' (models/marts/product/rpt_product_affinity.SQL) depends on a node named 'stg_products' which was not found
+[0m14:08:41.786283 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.8295225, "process_in_blocks": "0", "process_kernel_time": 0.182177, "process_mem_max_rss": "132874240", "process_out_blocks": "0", "process_user_time": 0.993993}
+[0m14:08:41.786661 [debug] [MainThread]: Command `dbt run` failed at 14:08:41.786604 after 0.83 seconds
+[0m14:08:41.789889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049259a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d61c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ee3d40>]}
+[0m14:08:41.791132 [debug] [MainThread]: Flushing usage events
+[0m14:08:41.905181 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:03.981861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ccb950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105381d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105381a90>]}
+
+
+============================== 14:35:03.991605 | 39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9 ==============================
+[0m14:35:03.991605 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:35:03.991949 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'empty': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error': 'None', 'log_format': 'default', 'static_parser': 'True', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'quiet': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select stg_products', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'debug': 'False', 'fail_fast': 'False', 'introspect': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'cache_selected_only': 'False'}
+[0m14:35:04.166018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a2bce0>]}
+[0m14:35:04.196029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105421a90>]}
+[0m14:35:04.197565 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:35:04.251077 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:35:04.304970 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m14:35:04.305316 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/staging/stg_products.sql
+[0m14:35:04.305485 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/product/rpt_product_affinity.SQL
+[0m14:35:04.305625 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/product/rpt_product_affinity_v2.sql
+[0m14:35:04.305756 [debug] [MainThread]: Partial parsing: added file: stylehub_dbt://models/marts/product/fct_order_items.sql
+[0m14:35:04.417729 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.personas
+- models.stylehub.marts.core
+- models.stylehub.staging
+- models.stylehub.marts.product
+[0m14:35:04.420280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059e49b0>]}
+[0m14:35:04.450348 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:35:04.452044 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:35:04.464401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10581a120>]}
+[0m14:35:04.464658 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:35:04.464825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10553b320>]}
+[0m14:35:04.465618 [info ] [MainThread]: 
+[0m14:35:04.465790 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:35:04.465926 [info ] [MainThread]: 
+[0m14:35:04.466214 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:35:04.466649 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:35:04.505871 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:35:04.506115 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:35:04.506272 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:04.530139 [debug] [ThreadPool]: SQL status: OK in 0.024 seconds
+[0m14:35:04.531189 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:35:04.531563 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:35:04.531826 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:35:04.535431 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:04.535654 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:35:04.535797 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:04.536637 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:35:04.537346 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:04.537503 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:35:04.537740 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:04.537867 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:04.537994 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:35:04.538236 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:04.538613 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:35:04.538746 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:04.538862 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:35:04.539062 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:04.539192 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:35:04.541917 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:35:04.544730 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:35:04.544902 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:35:04.545031 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:04.545295 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:04.545429 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:35:04.545566 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:35:04.556843 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m14:35:04.557752 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:35:04.558672 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:35:04.558843 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:35:04.560085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059428a0>]}
+[0m14:35:04.560327 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:04.560460 [debug] [MainThread]: On master: BEGIN
+[0m14:35:04.560579 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:35:04.560850 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:04.560984 [debug] [MainThread]: On master: COMMIT
+[0m14:35:04.561107 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:04.561223 [debug] [MainThread]: On master: COMMIT
+[0m14:35:04.561413 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:04.561544 [debug] [MainThread]: On master: Close
+[0m14:35:04.562889 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.stg_products
+[0m14:35:04.563150 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stg_products .................................. [RUN]
+[0m14:35:04.563363 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.stg_products)
+[0m14:35:04.563531 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.stg_products
+[0m14:35:04.566760 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.stg_products"
+[0m14:35:04.567395 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.stg_products
+[0m14:35:04.582390 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.stg_products"
+[0m14:35:04.583067 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.stg_products"
+[0m14:35:04.583263 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: BEGIN
+[0m14:35:04.583422 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:35:04.583821 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:35:04.583972 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.stg_products"
+[0m14:35:04.584121 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.stg_products"} */
+
+  
+  create view "stylehub"."main"."stg_products__dbt_tmp" as (
+    select 
+    product_id,
+    product_name,
+    lower(trim(category)) as category,
+    lower(trim(brand)) as brand,
+    base_price,
+    avg_rating,
+    num_reviews
+from products
+  );
+
+[0m14:35:04.584866 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:35:04.588051 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.stg_products"
+[0m14:35:04.588241 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.stg_products"} */
+alter view "stylehub"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m14:35:04.589115 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:35:04.593708 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: COMMIT
+[0m14:35:04.593893 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.stg_products"
+[0m14:35:04.594057 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: COMMIT
+[0m14:35:04.594608 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:35:04.597227 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.stg_products"
+[0m14:35:04.597401 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.stg_products"} */
+
+      drop view if exists "stylehub"."main"."stg_products__dbt_backup" cascade
+    
+[0m14:35:04.597932 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:35:04.599032 [debug] [Thread-1 (]: On model.stylehub_dbt.stg_products: Close
+[0m14:35:04.600087 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '39eaa3f5-9ea8-487b-8bd0-38b46ee7e3f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ed3ec0>]}
+[0m14:35:04.600426 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.04s]
+[0m14:35:04.600704 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.stg_products
+[0m14:35:04.601252 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:04.601410 [debug] [MainThread]: On master: BEGIN
+[0m14:35:04.601540 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:35:04.601844 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:04.601973 [debug] [MainThread]: On master: COMMIT
+[0m14:35:04.602094 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:04.602209 [debug] [MainThread]: On master: COMMIT
+[0m14:35:04.602403 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:04.602529 [debug] [MainThread]: On master: Close
+[0m14:35:04.602693 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:04.602812 [debug] [MainThread]: Connection 'model.stylehub_dbt.stg_products' was properly closed.
+[0m14:35:04.602932 [info ] [MainThread]: 
+[0m14:35:04.603080 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m14:35:04.603371 [debug] [MainThread]: Command end result
+[0m14:35:04.647664 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:35:04.648658 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:35:04.651965 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:35:04.652144 [info ] [MainThread]: 
+[0m14:35:04.652350 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:35:04.652497 [info ] [MainThread]: 
+[0m14:35:04.652648 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:35:04.654028 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.70986485, "process_in_blocks": "0", "process_kernel_time": 0.225586, "process_mem_max_rss": "148242432", "process_out_blocks": "0", "process_user_time": 1.175338}
+[0m14:35:04.654239 [debug] [MainThread]: Command `dbt run` succeeded at 14:35:04.654199 after 0.71 seconds
+[0m14:35:04.654413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104934bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104937980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10508a990>]}
+[0m14:35:04.654577 [debug] [MainThread]: Flushing usage events
+[0m14:35:04.779497 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:26.726103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106708e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109b5be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109b59a0>]}
+
+
+============================== 14:35:26.730820 | 206cff3e-4797-426a-bc1a-595819aedcca ==============================
+[0m14:35:26.730820 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:35:26.731158 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'introspect': 'True', 'printer_width': '80', 'debug': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'partial_parse': 'True', 'target_path': 'None', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'log_format': 'default', 'use_colors': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select fct_order_items', 'static_parser': 'True', 'empty': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'write_json': 'True'}
+[0m14:35:26.900573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102bffa70>]}
+[0m14:35:26.929365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110875fa0>]}
+[0m14:35:26.930766 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:35:26.983021 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:35:27.039610 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:35:27.039866 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:35:27.040004 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:35:27.043204 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.core
+- models.stylehub.marts.personas
+- models.stylehub.staging
+- models.stylehub.marts.product
+[0m14:35:27.053813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a245f0>]}
+[0m14:35:27.082120 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:35:27.083677 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:35:27.094677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111093ce0>]}
+[0m14:35:27.094968 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:35:27.095137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d93d0>]}
+[0m14:35:27.095986 [info ] [MainThread]: 
+[0m14:35:27.096154 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:35:27.096288 [info ] [MainThread]: 
+[0m14:35:27.096536 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:35:27.097052 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:35:27.128769 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:35:27.129005 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:35:27.129151 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:27.149549 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m14:35:27.150505 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:35:27.150905 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:35:27.151153 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:35:27.154819 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:27.155016 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:35:27.155156 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:27.156311 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:35:27.156999 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:27.157142 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:35:27.157371 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:27.157500 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:27.157625 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:35:27.158157 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:27.158538 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:35:27.158671 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:27.158787 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:35:27.158986 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:27.159116 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:35:27.161699 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:35:27.164308 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:35:27.164465 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:35:27.164586 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:27.164824 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:27.164956 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:35:27.165087 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:35:27.174899 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m14:35:27.175916 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:35:27.176804 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:35:27.176949 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:35:27.178163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a261e0>]}
+[0m14:35:27.178381 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:27.178515 [debug] [MainThread]: On master: BEGIN
+[0m14:35:27.178637 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:35:27.178884 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:27.179011 [debug] [MainThread]: On master: COMMIT
+[0m14:35:27.179132 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:27.179246 [debug] [MainThread]: On master: COMMIT
+[0m14:35:27.179455 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:27.179579 [debug] [MainThread]: On master: Close
+[0m14:35:27.180774 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.fct_order_items
+[0m14:35:27.181011 [info ] [Thread-1 (]: 1 of 1 START sql table model main.fct_order_items .............................. [RUN]
+[0m14:35:27.181210 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.fct_order_items)
+[0m14:35:27.181369 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.fct_order_items
+[0m14:35:27.185765 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.fct_order_items"
+[0m14:35:27.186509 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.fct_order_items
+[0m14:35:27.202127 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.fct_order_items"
+[0m14:35:27.202745 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:35:27.202922 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: BEGIN
+[0m14:35:27.203075 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:35:27.203442 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:35:27.203595 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:35:27.203785 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * form "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--parse JSON products array into individual items
+--Note: DuckDB can handle JSON parsing
+order_items_parsed as (
+    select 
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+
+        --parsing products JSON array
+        --the products column contains JSON like: ["P00001", "P00002", "P00003"]
+        unnest(json_extract_string(o.products, '$')) as product_id
+    from orders o 
+    where o.products is not null 
+),
+
+--join with products details
+order_items_enriched as (
+    select 
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+
+        --product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+
+        --order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+
+        --customer context
+        cl.cluster_name,
+        cl.persona_hidden
+    from order_items_parsed oi 
+    left join products p on oi.product_id = p.product_id 
+    left join clusters cl on oi.customer_id = cl.customer_id 
+
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:35:27.207140 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * form "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--parse JSON products array into individual items
+--Note: DuckDB can handle JSON parsing
+order_items_parsed as (
+    select 
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+
+        --parsing products JSON array
+        --the products column contains JSON like: ["P00001", "P00002", "P00003"]
+        unnest(json_extract_string(o.products, '$')) as product_id
+    from orders o 
+    where o.products is not null 
+),
+
+--join with products details
+order_items_enriched as (
+    select 
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+
+        --product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+
+        --order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+
+        --customer context
+        cl.cluster_name,
+        cl.persona_hidden
+    from order_items_parsed oi 
+    left join products p on oi.product_id = p.product_id 
+    left join clusters cl on oi.customer_id = cl.customer_id 
+
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:35:27.207377 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:35:27.207605 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: ROLLBACK
+[0m14:35:27.211762 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.fct_order_items'
+[0m14:35:27.211941 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: Close
+[0m14:35:27.213085 [debug] [Thread-1 (]: Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Parser Error: syntax error at or near ""stylehub""
+  
+  LINE 18:     select * form "stylehub"."main"."stg_products"
+                             ^
+[0m14:35:27.214051 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '206cff3e-4797-426a-bc1a-595819aedcca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11169a630>]}
+[0m14:35:27.214357 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.fct_order_items ..................... [[31mERROR[0m in 0.03s]
+[0m14:35:27.214626 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.fct_order_items
+[0m14:35:27.214892 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.fct_order_items' to be skipped because of status 'error'.  Reason: Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Parser Error: syntax error at or near ""stylehub""
+  
+  LINE 18:     select * form "stylehub"."main"."stg_products"
+                             ^.
+[0m14:35:27.215769 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:27.215917 [debug] [MainThread]: On master: BEGIN
+[0m14:35:27.216042 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:35:27.216344 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:27.216472 [debug] [MainThread]: On master: COMMIT
+[0m14:35:27.216595 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:27.216713 [debug] [MainThread]: On master: COMMIT
+[0m14:35:27.216900 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:27.217025 [debug] [MainThread]: On master: Close
+[0m14:35:27.217185 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:27.217309 [debug] [MainThread]: Connection 'model.stylehub_dbt.fct_order_items' was properly closed.
+[0m14:35:27.217437 [info ] [MainThread]: 
+[0m14:35:27.217579 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m14:35:27.217878 [debug] [MainThread]: Command end result
+[0m14:35:27.229719 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:35:27.230764 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:35:27.234399 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:35:27.234580 [info ] [MainThread]: 
+[0m14:35:27.234763 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:35:27.234909 [info ] [MainThread]: 
+[0m14:35:27.235092 [error] [MainThread]: [31mFailure in model fct_order_items (models/marts/product/fct_order_items.sql)[0m
+[0m14:35:27.235256 [error] [MainThread]:   Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Parser Error: syntax error at or near ""stylehub""
+  
+  LINE 18:     select * form "stylehub"."main"."stg_products"
+                             ^
+[0m14:35:27.235384 [info ] [MainThread]: 
+[0m14:35:27.235534 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/product/fct_order_items.sql
+[0m14:35:27.235657 [info ] [MainThread]: 
+[0m14:35:27.235801 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:35:27.236835 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.55074036, "process_in_blocks": "0", "process_kernel_time": 0.187566, "process_mem_max_rss": "145211392", "process_out_blocks": "0", "process_user_time": 1.000321}
+[0m14:35:27.237057 [debug] [MainThread]: Command `dbt run` failed at 14:35:27.237018 after 0.55 seconds
+[0m14:35:27.237239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ae1130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106796e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106796db0>]}
+[0m14:35:27.237400 [debug] [MainThread]: Flushing usage events
+[0m14:35:27.328549 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:48.953637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104706690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107181bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071819a0>]}
+
+
+============================== 14:35:48.958046 | a8c89369-6888-47bb-8d06-d733c4f90fc1 ==============================
+[0m14:35:48.958046 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:35:48.958434 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'debug': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'empty': 'False', 'invocation_command': 'dbt run --select fct_order_items', 'log_format': 'default', 'quiet': 'False', 'fail_fast': 'False', 'target_path': 'None', 'no_print': 'None', 'version_check': 'True', 'use_colors': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'introspect': 'True', 'warn_error': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False'}
+[0m14:35:49.116177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071f1220>]}
+[0m14:35:49.144705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ee3680>]}
+[0m14:35:49.146138 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:35:49.200413 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:35:49.247700 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:35:49.248077 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/product/fct_order_items.sql
+[0m14:35:49.353497 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.staging
+- models.stylehub.marts.product
+- models.stylehub.marts.core
+- models.stylehub.marts.personas
+[0m14:35:49.355995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077bda60>]}
+[0m14:35:49.384624 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:35:49.386226 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:35:49.397014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078bec90>]}
+[0m14:35:49.397288 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:35:49.397467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078c4fb0>]}
+[0m14:35:49.398275 [info ] [MainThread]: 
+[0m14:35:49.398455 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:35:49.398592 [info ] [MainThread]: 
+[0m14:35:49.398840 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:35:49.399288 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:35:49.426028 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:35:49.426262 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:35:49.426414 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:49.447590 [debug] [ThreadPool]: SQL status: OK in 0.021 seconds
+[0m14:35:49.448850 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:35:49.449284 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:35:49.449524 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:35:49.452812 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:49.452989 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:35:49.453123 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:49.454036 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:35:49.454680 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:49.454820 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:35:49.455049 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:49.455173 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:49.455297 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:35:49.455778 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:49.456353 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:35:49.456557 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:35:49.456710 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:35:49.456952 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:49.457099 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:35:49.459721 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:35:49.463181 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:35:49.463349 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:35:49.463476 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:49.463743 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:35:49.463874 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:35:49.464007 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:35:49.475066 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m14:35:49.475865 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:35:49.476736 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:35:49.476888 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:35:49.477902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c53830>]}
+[0m14:35:49.478143 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:49.478280 [debug] [MainThread]: On master: BEGIN
+[0m14:35:49.478399 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:35:49.478650 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:49.478781 [debug] [MainThread]: On master: COMMIT
+[0m14:35:49.478905 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:49.479024 [debug] [MainThread]: On master: COMMIT
+[0m14:35:49.479221 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:49.479351 [debug] [MainThread]: On master: Close
+[0m14:35:49.480558 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.fct_order_items
+[0m14:35:49.480797 [info ] [Thread-1 (]: 1 of 1 START sql table model main.fct_order_items .............................. [RUN]
+[0m14:35:49.480998 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.fct_order_items)
+[0m14:35:49.481156 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.fct_order_items
+[0m14:35:49.485132 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.fct_order_items"
+[0m14:35:49.485602 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.fct_order_items
+[0m14:35:49.501444 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.fct_order_items"
+[0m14:35:49.502073 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:35:49.502254 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: BEGIN
+[0m14:35:49.502399 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:35:49.502765 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:35:49.502921 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:35:49.503100 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * from "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--parse JSON products array into individual items
+--Note: DuckDB can handle JSON parsing
+order_items_parsed as (
+    select 
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+
+        --parsing products JSON array
+        --the products column contains JSON like: ["P00001", "P00002", "P00003"]
+        unnest(json_extract_string(o.products, '$')) as product_id
+    from orders o 
+    where o.products is not null 
+),
+
+--join with products details
+order_items_enriched as (
+    select 
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+
+        --product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+
+        --order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+
+        --customer context
+        cl.cluster_name,
+        cl.persona_hidden
+    from order_items_parsed oi 
+    left join products p on oi.product_id = p.product_id 
+    left join clusters cl on oi.customer_id = cl.customer_id 
+
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:35:49.508579 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * from "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--parse JSON products array into individual items
+--Note: DuckDB can handle JSON parsing
+order_items_parsed as (
+    select 
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+
+        --parsing products JSON array
+        --the products column contains JSON like: ["P00001", "P00002", "P00003"]
+        unnest(json_extract_string(o.products, '$')) as product_id
+    from orders o 
+    where o.products is not null 
+),
+
+--join with products details
+order_items_enriched as (
+    select 
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+
+        --product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+
+        --order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+
+        --customer context
+        cl.cluster_name,
+        cl.persona_hidden
+    from order_items_parsed oi 
+    left join products p on oi.product_id = p.product_id 
+    left join clusters cl on oi.customer_id = cl.customer_id 
+
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:35:49.508795 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:35:49.509020 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: ROLLBACK
+[0m14:35:49.513125 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.fct_order_items'
+[0m14:35:49.513316 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: Close
+[0m14:35:49.514490 [debug] [Thread-1 (]: Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Binder Error: Values list "o" does not have a column named "products"
+  
+  LINE 40:     where o.products is not null 
+                     ^
+[0m14:35:49.515497 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a8c89369-6888-47bb-8d06-d733c4f90fc1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bc2630>]}
+[0m14:35:49.515837 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.fct_order_items ..................... [[31mERROR[0m in 0.03s]
+[0m14:35:49.516170 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.fct_order_items
+[0m14:35:49.516427 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.fct_order_items' to be skipped because of status 'error'.  Reason: Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Binder Error: Values list "o" does not have a column named "products"
+  
+  LINE 40:     where o.products is not null 
+                     ^.
+[0m14:35:49.517247 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:49.517404 [debug] [MainThread]: On master: BEGIN
+[0m14:35:49.517527 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:35:49.517851 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:49.517983 [debug] [MainThread]: On master: COMMIT
+[0m14:35:49.518109 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:35:49.518223 [debug] [MainThread]: On master: COMMIT
+[0m14:35:49.518421 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:35:49.518545 [debug] [MainThread]: On master: Close
+[0m14:35:49.518709 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:49.518822 [debug] [MainThread]: Connection 'model.stylehub_dbt.fct_order_items' was properly closed.
+[0m14:35:49.518945 [info ] [MainThread]: 
+[0m14:35:49.519083 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m14:35:49.519382 [debug] [MainThread]: Command end result
+[0m14:35:49.562894 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:35:49.563813 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:35:49.566933 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:35:49.567102 [info ] [MainThread]: 
+[0m14:35:49.567286 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:35:49.567434 [info ] [MainThread]: 
+[0m14:35:49.567614 [error] [MainThread]: [31mFailure in model fct_order_items (models/marts/product/fct_order_items.sql)[0m
+[0m14:35:49.567781 [error] [MainThread]:   Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Binder Error: Values list "o" does not have a column named "products"
+  
+  LINE 40:     where o.products is not null 
+                     ^
+[0m14:35:49.567906 [info ] [MainThread]: 
+[0m14:35:49.568053 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/product/fct_order_items.sql
+[0m14:35:49.568181 [info ] [MainThread]: 
+[0m14:35:49.568322 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:35:49.569668 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.65879536, "process_in_blocks": "0", "process_kernel_time": 0.193384, "process_mem_max_rss": "148750336", "process_out_blocks": "0", "process_user_time": 1.11461}
+[0m14:35:49.569902 [debug] [MainThread]: Command `dbt run` failed at 14:35:49.569862 after 0.66 seconds
+[0m14:35:49.570094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078c6300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cfb680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cfbf80>]}
+[0m14:35:49.570272 [debug] [MainThread]: Flushing usage events
+[0m14:35:49.672755 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:38:23.089654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095a2090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d08590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6b57f0>]}
+
+
+============================== 14:38:23.101074 | 71518983-afa8-44a0-b84c-d25467fb2489 ==============================
+[0m14:38:23.101074 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:38:23.101458 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'debug': 'False', 'introspect': 'True', 'invocation_command': 'dbt run --select fct_order_items', 'no_print': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'quiet': 'False', 'static_parser': 'True', 'write_json': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'printer_width': '80'}
+[0m14:38:23.296233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acca870>]}
+[0m14:38:23.336451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109670b90>]}
+[0m14:38:23.338124 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:38:23.403884 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:38:23.467678 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:38:23.468036 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:38:23.468210 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:38:23.471904 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.product
+- models.stylehub.staging
+- models.stylehub.marts.core
+- models.stylehub.marts.personas
+[0m14:38:23.483559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad5e330>]}
+[0m14:38:23.522599 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:38:23.524635 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:38:23.545257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c148b30>]}
+[0m14:38:23.545663 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:38:23.545969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c195f10>]}
+[0m14:38:23.547050 [info ] [MainThread]: 
+[0m14:38:23.547298 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:38:23.547444 [info ] [MainThread]: 
+[0m14:38:23.547721 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:38:23.548890 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:38:23.607728 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:38:23.608028 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:38:23.608201 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:38:23.631025 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m14:38:23.632962 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:38:23.633546 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:38:23.633819 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:38:23.637822 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:38:23.638158 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:38:23.638328 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:38:23.639434 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:38:23.640275 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:38:23.640449 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:38:23.640742 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:38:23.640874 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:38:23.641000 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:38:23.641546 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:38:23.642068 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:38:23.642297 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:38:23.642435 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:38:23.642747 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:38:23.642903 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:38:23.645863 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:38:23.649748 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:38:23.650070 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:38:23.650207 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:38:23.650566 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:38:23.650764 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:38:23.650925 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:38:23.663291 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m14:38:23.664365 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:38:23.665385 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:38:23.665807 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:38:23.666969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c70e750>]}
+[0m14:38:23.669943 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:38:23.670329 [debug] [MainThread]: On master: BEGIN
+[0m14:38:23.670468 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:38:23.670825 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:38:23.670965 [debug] [MainThread]: On master: COMMIT
+[0m14:38:23.671094 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:38:23.671213 [debug] [MainThread]: On master: COMMIT
+[0m14:38:23.671412 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:38:23.671534 [debug] [MainThread]: On master: Close
+[0m14:38:23.672889 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.fct_order_items
+[0m14:38:23.673141 [info ] [Thread-1 (]: 1 of 1 START sql table model main.fct_order_items .............................. [RUN]
+[0m14:38:23.673353 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.fct_order_items)
+[0m14:38:23.673514 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.fct_order_items
+[0m14:38:23.677418 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.fct_order_items"
+[0m14:38:23.678387 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.fct_order_items
+[0m14:38:23.696419 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.fct_order_items"
+[0m14:38:23.697505 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:38:23.697695 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: BEGIN
+[0m14:38:23.697854 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:38:23.698248 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:38:23.698403 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:38:23.698587 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * from "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--parse JSON products array into individual items
+--Note: DuckDB can handle JSON parsing
+order_items_parsed as (
+    select 
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+
+        --parsing products JSON array
+        --the products column contains JSON like: ["P00001", "P00002", "P00003"]
+        unnest(json_extract_string(o.products, '$')) as product_id
+    from orders o 
+    where o.products is not null 
+),
+
+--join with products details
+order_items_enriched as (
+    select 
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+
+        --product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+
+        --order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+
+        --customer context
+        cl.cluster_name,
+        cl.persona_hidden
+    from order_items_parsed oi 
+    left join products p on oi.product_id = p.product_id 
+    left join clusters cl on oi.customer_id = cl.customer_id 
+
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:38:23.702904 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * from "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+--parse JSON products array into individual items
+--Note: DuckDB can handle JSON parsing
+order_items_parsed as (
+    select 
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+
+        --parsing products JSON array
+        --the products column contains JSON like: ["P00001", "P00002", "P00003"]
+        unnest(json_extract_string(o.products, '$')) as product_id
+    from orders o 
+    where o.products is not null 
+),
+
+--join with products details
+order_items_enriched as (
+    select 
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+
+        --product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+
+        --order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+
+        --customer context
+        cl.cluster_name,
+        cl.persona_hidden
+    from order_items_parsed oi 
+    left join products p on oi.product_id = p.product_id 
+    left join clusters cl on oi.customer_id = cl.customer_id 
+
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:38:23.703220 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m14:38:23.703477 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: ROLLBACK
+[0m14:38:23.707772 [debug] [Thread-1 (]: Failed to rollback 'model.stylehub_dbt.fct_order_items'
+[0m14:38:23.708021 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: Close
+[0m14:38:23.709301 [debug] [Thread-1 (]: Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Binder Error: Values list "o" does not have a column named "products"
+  
+  LINE 40:     where o.products is not null 
+                     ^
+[0m14:38:23.710424 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '71518983-afa8-44a0-b84c-d25467fb2489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad5c380>]}
+[0m14:38:23.710781 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.fct_order_items ..................... [[31mERROR[0m in 0.04s]
+[0m14:38:23.711070 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.fct_order_items
+[0m14:38:23.711336 [debug] [Thread-4 (]: Marking all children of 'model.stylehub_dbt.fct_order_items' to be skipped because of status 'error'.  Reason: Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Binder Error: Values list "o" does not have a column named "products"
+  
+  LINE 40:     where o.products is not null 
+                     ^.
+[0m14:38:23.712281 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:38:23.712466 [debug] [MainThread]: On master: BEGIN
+[0m14:38:23.712609 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:38:23.712977 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:38:23.713115 [debug] [MainThread]: On master: COMMIT
+[0m14:38:23.713243 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:38:23.713360 [debug] [MainThread]: On master: COMMIT
+[0m14:38:23.713556 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:38:23.713685 [debug] [MainThread]: On master: Close
+[0m14:38:23.713849 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:38:23.713967 [debug] [MainThread]: Connection 'model.stylehub_dbt.fct_order_items' was properly closed.
+[0m14:38:23.714093 [info ] [MainThread]: 
+[0m14:38:23.714228 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m14:38:23.714537 [debug] [MainThread]: Command end result
+[0m14:38:23.726213 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:38:23.727111 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:38:23.730385 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:38:23.730547 [info ] [MainThread]: 
+[0m14:38:23.730726 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m14:38:23.730868 [info ] [MainThread]: 
+[0m14:38:23.731045 [error] [MainThread]: [31mFailure in model fct_order_items (models/marts/product/fct_order_items.sql)[0m
+[0m14:38:23.731219 [error] [MainThread]:   Runtime Error in model fct_order_items (models/marts/product/fct_order_items.sql)
+  Binder Error: Values list "o" does not have a column named "products"
+  
+  LINE 40:     where o.products is not null 
+                     ^
+[0m14:38:23.731346 [info ] [MainThread]: 
+[0m14:38:23.731492 [info ] [MainThread]:   compiled code at target/compiled/stylehub_dbt/models/marts/product/fct_order_items.sql
+[0m14:38:23.731622 [info ] [MainThread]: 
+[0m14:38:23.731763 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:38:23.732823 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.6874921, "process_in_blocks": "0", "process_kernel_time": 0.214421, "process_mem_max_rss": "145162240", "process_out_blocks": "0", "process_user_time": 1.059771}
+[0m14:38:23.733074 [debug] [MainThread]: Command `dbt run` failed at 14:38:23.733034 after 0.69 seconds
+[0m14:38:23.733289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064d3740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6b5970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6b57f0>]}
+[0m14:38:23.733470 [debug] [MainThread]: Flushing usage events
+[0m14:38:23.849732 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:40:54.213196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10268ca40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fb5b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fb58e0>]}
+
+
+============================== 14:40:54.221123 | dd54f408-8f97-4bbd-8142-8c104416ad7e ==============================
+[0m14:40:54.221123 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:40:54.221465 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'quiet': 'False', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'printer_width': '80', 'log_cache_events': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'empty': 'False', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'version_check': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'invocation_command': 'dbt run --select fct_order_items'}
+[0m14:40:54.480348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1027d3b90>]}
+[0m14:40:54.508840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078e0170>]}
+[0m14:40:54.510325 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:40:54.564516 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:40:54.616032 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:40:54.616402 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/product/fct_order_items.sql
+[0m14:40:54.729539 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.core
+- models.stylehub.marts.product
+- models.stylehub.staging
+- models.stylehub.marts.personas
+[0m14:40:54.732135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102f9670>]}
+[0m14:40:54.761730 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:40:54.763438 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:40:54.775860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102cad50>]}
+[0m14:40:54.776135 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:40:54.776312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c45250>]}
+[0m14:40:54.777124 [info ] [MainThread]: 
+[0m14:40:54.777311 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:40:54.777445 [info ] [MainThread]: 
+[0m14:40:54.777692 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:40:54.778081 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:40:54.806390 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:40:54.806624 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:40:54.806774 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:40:54.824912 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m14:40:54.825926 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:40:54.826277 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:40:54.826521 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:40:54.829714 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:40:54.829880 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:40:54.830011 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:40:54.830775 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:40:54.831466 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:40:54.831630 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:40:54.831921 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:40:54.832063 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:40:54.832191 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:40:54.832441 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:40:54.832851 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:40:54.832984 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:40:54.833102 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:40:54.833311 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:40:54.833586 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:40:54.836620 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:40:54.840146 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:40:54.840320 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:40:54.840452 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:40:54.840756 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:40:54.840887 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:40:54.841021 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:40:54.852726 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m14:40:54.853650 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:40:54.854533 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:40:54.854683 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:40:54.855711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1035335f0>]}
+[0m14:40:54.855944 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:40:54.856071 [debug] [MainThread]: On master: BEGIN
+[0m14:40:54.856189 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:40:54.856499 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:40:54.856639 [debug] [MainThread]: On master: COMMIT
+[0m14:40:54.856769 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:40:54.856885 [debug] [MainThread]: On master: COMMIT
+[0m14:40:54.857085 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:40:54.857211 [debug] [MainThread]: On master: Close
+[0m14:40:54.858603 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.fct_order_items
+[0m14:40:54.858852 [info ] [Thread-1 (]: 1 of 1 START sql table model main.fct_order_items .............................. [RUN]
+[0m14:40:54.859056 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.fct_order_items)
+[0m14:40:54.859214 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.fct_order_items
+[0m14:40:54.863201 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.863996 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.fct_order_items
+[0m14:40:54.879145 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.879934 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.880112 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: BEGIN
+[0m14:40:54.880265 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:40:54.880752 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:40:54.880954 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.881161 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * from "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+-- Assign likely products to orders based on value and num_items
+-- This creates a realistic product mix per order
+order_items_generated as (
+    select
+        o.order_id,
+        o.customer_id,
+        o.ordered_at,
+        o.total,
+        o.num_items,
+        o.returned,
+        
+        -- Generate item number (1 to num_items)
+        unnest(generate_series(1, o.num_items)) as item_number,
+        
+        -- Assign product based on order total and item position
+        -- Higher value orders get higher-priced products
+        case
+            when o.total / o.num_items >= 100 then 
+                (select product_id from products where base_price >= 100 order by random() limit 1)
+            when o.total / o.num_items >= 50 then
+                (select product_id from products where base_price >= 50 and base_price < 100 order by random() limit 1)
+            when o.total / o.num_items >= 30 then
+                (select product_id from products where base_price >= 30 and base_price < 50 order by random() limit 1)
+            else
+                (select product_id from products where base_price < 30 order by random() limit 1)
+        end as product_id
+        
+    from orders o
+),
+
+-- Join with product details
+order_items_enriched as (
+    select
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+        
+        -- Product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+        
+        -- Order context
+        oi.total as order_total,
+        oi.num_items as items_in_order,
+        oi.returned as order_returned,
+        
+        -- Customer context
+        cl.cluster_name,
+        cl.persona_hidden
+        
+    from order_items_generated oi
+    left join products p on oi.product_id = p.product_id
+    left join clusters cl on oi.customer_id = cl.customer_id
+)
+
+select * from order_items_enriched
+    );
+  
+  
+[0m14:40:54.940132 [debug] [Thread-1 (]: SQL status: OK in 0.059 seconds
+[0m14:40:54.943545 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.944910 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+alter table "stylehub"."main"."fct_order_items__dbt_tmp" rename to "fct_order_items"
+[0m14:40:54.946082 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:40:54.952757 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: COMMIT
+[0m14:40:54.953039 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.953206 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: COMMIT
+[0m14:40:54.969763 [debug] [Thread-1 (]: SQL status: OK in 0.016 seconds
+[0m14:40:54.972612 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:40:54.972793 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+      drop table if exists "stylehub"."main"."fct_order_items__dbt_backup" cascade
+    
+[0m14:40:54.973514 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:40:54.974648 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: Close
+[0m14:40:54.975680 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd54f408-8f97-4bbd-8142-8c104416ad7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1027d2d80>]}
+[0m14:40:54.975977 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.fct_order_items ......................... [[32mOK[0m in 0.12s]
+[0m14:40:54.976248 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.fct_order_items
+[0m14:40:54.976859 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:40:54.977083 [debug] [MainThread]: On master: BEGIN
+[0m14:40:54.977226 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:40:54.977619 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:40:54.977802 [debug] [MainThread]: On master: COMMIT
+[0m14:40:54.977970 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:40:54.978108 [debug] [MainThread]: On master: COMMIT
+[0m14:40:54.978401 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:40:54.978540 [debug] [MainThread]: On master: Close
+[0m14:40:54.978736 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:40:54.978855 [debug] [MainThread]: Connection 'model.stylehub_dbt.fct_order_items' was properly closed.
+[0m14:40:54.978994 [info ] [MainThread]: 
+[0m14:40:54.979153 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.20 seconds (0.20s).
+[0m14:40:54.979477 [debug] [MainThread]: Command end result
+[0m14:40:55.023332 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:40:55.024671 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:40:55.028152 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:40:55.028328 [info ] [MainThread]: 
+[0m14:40:55.028525 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:40:55.028669 [info ] [MainThread]: 
+[0m14:40:55.028823 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:40:55.030214 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.85764986, "process_in_blocks": "0", "process_kernel_time": 0.226135, "process_mem_max_rss": "183861248", "process_out_blocks": "0", "process_user_time": 1.268681}
+[0m14:40:55.030423 [debug] [MainThread]: Command `dbt run` succeeded at 14:40:55.030382 after 0.86 seconds
+[0m14:40:55.030602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fc0e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b06f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110736090>]}
+[0m14:40:55.030763 [debug] [MainThread]: Flushing usage events
+[0m14:40:55.146074 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:42:13.228283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109874ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0b5c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0b5a00>]}
+
+
+============================== 14:42:13.240240 | 8c2927ba-047f-4f39-af54-471f5fd8c203 ==============================
+[0m14:42:13.240240 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:42:13.240575 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'static_parser': 'True', 'introspect': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select rpt_product_affinity_v2', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'debug': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'quiet': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'version_check': 'True', 'fail_fast': 'False', 'target_path': 'None', 'partial_parse': 'True', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'printer_width': '80', 'no_print': 'None'}
+[0m14:42:13.407765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069bce90>]}
+[0m14:42:13.436098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10862d8e0>]}
+[0m14:42:13.437439 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:42:13.494162 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:42:13.543007 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:42:13.543245 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:42:13.543382 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:42:13.546506 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.core
+- models.stylehub.staging
+- models.stylehub.marts.product
+- models.stylehub.marts.personas
+[0m14:42:13.556772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4a3170>]}
+[0m14:42:13.585794 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:42:13.587331 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:42:13.599899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a79b200>]}
+[0m14:42:13.600177 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:42:13.600345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a7f2db0>]}
+[0m14:42:13.601238 [info ] [MainThread]: 
+[0m14:42:13.601415 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:42:13.601551 [info ] [MainThread]: 
+[0m14:42:13.601816 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:42:13.602260 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:42:13.631663 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:42:13.631923 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:42:13.632080 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:42:13.650814 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m14:42:13.651768 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:42:13.655303 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:42:13.655889 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:42:13.659534 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:42:13.659739 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:42:13.659879 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:42:13.660682 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:42:13.661312 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:42:13.661454 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:42:13.661680 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:13.661806 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:42:13.661929 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:42:13.662182 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:13.662556 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:42:13.662689 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:42:13.662804 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:42:13.663003 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:13.663129 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:42:13.665806 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:42:13.668940 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:42:13.669170 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:42:13.669301 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:42:13.669692 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:42:13.669880 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:42:13.670038 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:42:13.681664 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m14:42:13.682605 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:42:13.683544 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:42:13.683710 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:42:13.685041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a84d190>]}
+[0m14:42:13.685274 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:42:13.685403 [debug] [MainThread]: On master: BEGIN
+[0m14:42:13.685522 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:42:13.685806 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:13.685934 [debug] [MainThread]: On master: COMMIT
+[0m14:42:13.686057 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:42:13.686169 [debug] [MainThread]: On master: COMMIT
+[0m14:42:13.686352 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:13.686475 [debug] [MainThread]: On master: Close
+[0m14:42:13.687790 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:42:13.688033 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_product_affinity_v2 ...................... [RUN]
+[0m14:42:13.688237 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_product_affinity_v2)
+[0m14:42:13.688396 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:42:13.692276 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.693176 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:42:13.710577 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.711362 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.711554 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: BEGIN
+[0m14:42:13.711705 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:42:13.712118 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:42:13.712310 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.712567 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_product_affinity_v2__dbt_tmp"
+  
+    as (
+      
+
+with order_items as (
+    select * from "stylehub"."main"."fct_order_items"
+),
+
+--get all product pairs purchased together
+product_pairs as (
+    select 
+        oi1.cluster_name,
+        oi1.product_id as product_a,
+        oi1.category as category_a,
+        oi1.brand as brand_a,
+        oi2.product_id as product_b,
+        oi2.category as category_b,
+        oi2.brand as brand_b,
+        oi1.order_id 
+    from order_items oi1 
+    inner join order_items oi2 
+        on oi1.order_id = oi2.order_id 
+        and oi1.product_id < oi2.product_id --avoid duplicates and self-joins
+    where oi1.cluster_name is not null 
+),
+
+--count co-occurrences
+product_affinity as (
+    select 
+        cluster_name,
+        product_a,
+        category_a,
+        brand_a,
+        product_b,
+        category_b,
+        brand_b,
+        count(*) as times_bought_together,
+        count(distinct order_id) as orders_with_both 
+    from product_pairs 
+    group by 
+        cluster_name,
+        product_a, category_a, brand_a,
+        product_b, category_b, brand_b
+),
+
+--calculate individual product purchase counts
+product_totals as (
+    select 
+        cluster_name,
+        product_id,
+        count(distinct order_id) as total_orders
+    from order_items 
+    where cluster_name is not null 
+    group by cluster_name, product_id 
+),
+
+--calculate confidence with lift
+affinity_metrics as (
+    select 
+        pa.cluster_name,
+        pa.product_a,
+        pa.category_a,
+        pa.brand_a,
+        pa.product_b,
+        pa.category_b,
+        pa.brand_b,
+        pa.times_bought_together,
+        pa.orders_with_both,
+
+        --support: % of orders containing both products
+        round(pa.orders_with_both::float / 
+            sum(pa.orders_with_both) over (partition by pa.cluster_name) * 100, 2) as support_pct,
+
+        --confidence: if bought A, what % also bought B
+        round(pa.orders_with_both::float / pt_a.total_orders * 100, 2) as confidence_pct,
+
+        --lift: how much more liely to but together vs independent
+        round(
+            (pa.orders_with_both::float / pt_a.total_orders) /
+            (pt_b.total_orders::float / sum(pt_b.total_orders) over (partition by pa.cluster_name)),
+            2
+        ) as lift 
+    from product_affinity pa 
+    left join product_totals pt_a 
+        on pa.cluster_name = pt_a.cluster_name 
+        and pa.product_a = pt_a.product_id 
+    left join product_totals pt_b 
+        on pa.cluster_name = pt_b.cluster_name 
+        and pa.product_b = pt_b.product_id 
+),
+
+final as (
+    select 
+        cluster_name,
+        product_a,
+        category_a,
+        brand_a,
+        product_b,
+        category_b,
+        brand_b,
+        times_bought_together,
+        support_pct,
+        confidence_pct,
+        lift,
+
+        --recommendation strength
+        case 
+            when times_bought_together >= 50 and lift >= 2.0 then 'Very Strong'
+            when times_bought_together >= 30 and lift >= 1.5 then 'Strong'
+            when times_bought_together >= 15 and lift >= 1.2 then 'Moderate'
+            else 'Weak'
+        end recommendation_strength,
+
+        --recommendation text
+        'Customers who bought ' || category_a || ' (' || brand_a || ') also bought ' ||
+        category_b || ' (' || brand_b || ') ' || confidence_pct || '% of the time' as recommendation_text 
+    from affinity_metrics 
+    where times_bought_together >= 5 --minimum threshold
+        and lift >= 1.0 --only show when there's actual affinity
+)
+
+select * from final 
+order by cluster_name, times_bought_together desc
+    );
+  
+  
+[0m14:42:13.747081 [debug] [Thread-1 (]: SQL status: OK in 0.034 seconds
+[0m14:42:13.750613 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.750842 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+alter table "stylehub"."main"."rpt_product_affinity_v2__dbt_tmp" rename to "rpt_product_affinity_v2"
+[0m14:42:13.751769 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:42:13.757873 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: COMMIT
+[0m14:42:13.758068 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.758225 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: COMMIT
+[0m14:42:13.758993 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:42:13.761621 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:42:13.761803 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+      drop table if exists "stylehub"."main"."rpt_product_affinity_v2__dbt_backup" cascade
+    
+[0m14:42:13.762380 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:42:13.763471 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: Close
+[0m14:42:13.764443 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c2927ba-047f-4f39-af54-471f5fd8c203', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac614f0>]}
+[0m14:42:13.764792 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.rpt_product_affinity_v2 ................. [[32mOK[0m in 0.08s]
+[0m14:42:13.765128 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:42:13.765723 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:42:13.765880 [debug] [MainThread]: On master: BEGIN
+[0m14:42:13.766007 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:42:13.766321 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:13.766480 [debug] [MainThread]: On master: COMMIT
+[0m14:42:13.766615 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:42:13.766738 [debug] [MainThread]: On master: COMMIT
+[0m14:42:13.766958 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:42:13.767089 [debug] [MainThread]: On master: Close
+[0m14:42:13.767260 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:42:13.767375 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_product_affinity_v2' was properly closed.
+[0m14:42:13.767499 [info ] [MainThread]: 
+[0m14:42:13.767636 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m14:42:13.767933 [debug] [MainThread]: Command end result
+[0m14:42:13.780005 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:42:13.780962 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:42:13.784600 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:42:13.784771 [info ] [MainThread]: 
+[0m14:42:13.784953 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:42:13.785095 [info ] [MainThread]: 
+[0m14:42:13.785308 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:42:13.786687 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.5957173, "process_in_blocks": "0", "process_kernel_time": 0.216422, "process_mem_max_rss": "190775296", "process_out_blocks": "0", "process_user_time": 1.088994}
+[0m14:42:13.786903 [debug] [MainThread]: Command `dbt run` succeeded at 14:42:13.786866 after 0.60 seconds
+[0m14:42:13.787085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109874dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e76990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dff860>]}
+[0m14:42:13.787248 [debug] [MainThread]: Flushing usage events
+[0m14:42:13.908096 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:47:45.734014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f2be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054128d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055e1bb0>]}
+
+
+============================== 14:47:45.746568 | b3315404-5915-469e-8c83-bfcd39eec061 ==============================
+[0m14:47:45.746568 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:47:45.746965 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run --select rpt_product_affinity_v2', 'cache_selected_only': 'False', 'static_parser': 'True', 'warn_error': 'None', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'empty': 'False', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'use_experimental_parser': 'False', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'quiet': 'False', 'target_path': 'None', 'introspect': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'no_print': 'None', 'printer_width': '80'}
+[0m14:47:45.926175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050bbef0>]}
+[0m14:47:45.955304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105889190>]}
+[0m14:47:45.956764 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:47:46.008705 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:47:46.059276 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:47:46.059521 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m14:47:46.059663 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:47:46.062713 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.core
+- models.stylehub.staging
+- models.stylehub.marts.personas
+- models.stylehub.marts.product
+[0m14:47:46.073031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058a7c80>]}
+[0m14:47:46.103861 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:47:46.105568 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:47:46.118039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059c3590>]}
+[0m14:47:46.118303 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:47:46.118468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b9fd40>]}
+[0m14:47:46.119293 [info ] [MainThread]: 
+[0m14:47:46.119466 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:47:46.119601 [info ] [MainThread]: 
+[0m14:47:46.119840 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:47:46.120252 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:47:46.149469 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:47:46.149712 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:47:46.149859 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:47:46.169074 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m14:47:46.171322 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:47:46.171705 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:47:46.171960 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:47:46.175225 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:47:46.175399 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:47:46.175543 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:47:46.176351 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:47:46.177133 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:47:46.177279 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:47:46.177515 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:47:46.177645 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:47:46.177767 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:47:46.178011 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:47:46.178402 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:47:46.178531 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:47:46.178646 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:47:46.178844 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:47:46.178968 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:47:46.181605 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:47:46.184298 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:47:46.184461 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:47:46.184587 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:47:46.184849 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:47:46.184983 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:47:46.185115 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:47:46.195978 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m14:47:46.196869 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:47:46.197822 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:47:46.197987 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:47:46.199109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057cc080>]}
+[0m14:47:46.199330 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:47:46.199467 [debug] [MainThread]: On master: BEGIN
+[0m14:47:46.199584 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:47:46.199841 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:47:46.199973 [debug] [MainThread]: On master: COMMIT
+[0m14:47:46.200096 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:47:46.200215 [debug] [MainThread]: On master: COMMIT
+[0m14:47:46.200472 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:47:46.200668 [debug] [MainThread]: On master: Close
+[0m14:47:46.202024 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:47:46.202271 [info ] [Thread-1 (]: 1 of 1 START sql table model main.rpt_product_affinity_v2 ...................... [RUN]
+[0m14:47:46.202474 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.rpt_product_affinity_v2)
+[0m14:47:46.202635 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:47:46.207653 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.208648 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:47:46.224666 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.225529 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.225722 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: BEGIN
+[0m14:47:46.225877 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:47:46.226229 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:47:46.226387 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.226621 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_product_affinity_v2__dbt_tmp"
+  
+    as (
+      
+
+with order_items as (
+    select * from "stylehub"."main"."fct_order_items"
+),
+
+--get all product pairs purchased together
+product_pairs as (
+    select 
+        oi1.cluster_name,
+        oi1.product_id as product_a,
+        oi1.category as category_a,
+        oi1.brand as brand_a,
+        oi2.product_id as product_b,
+        oi2.category as category_b,
+        oi2.brand as brand_b,
+        oi1.order_id 
+    from order_items oi1 
+    inner join order_items oi2 
+        on oi1.order_id = oi2.order_id 
+        and oi1.product_id < oi2.product_id --avoid duplicates and self-joins
+    where oi1.cluster_name is not null 
+),
+
+--count co-occurrences
+product_affinity as (
+    select 
+        cluster_name,
+        product_a,
+        category_a,
+        brand_a,
+        product_b,
+        category_b,
+        brand_b,
+        count(*) as times_bought_together,
+        count(distinct order_id) as orders_with_both 
+    from product_pairs 
+    group by 
+        cluster_name,
+        product_a, category_a, brand_a,
+        product_b, category_b, brand_b
+),
+
+--calculate individual product purchase counts
+product_totals as (
+    select 
+        cluster_name,
+        product_id,
+        count(distinct order_id) as total_orders
+    from order_items 
+    where cluster_name is not null 
+    group by cluster_name, product_id 
+),
+
+--calculate confidence with lift
+affinity_metrics as (
+    select 
+        pa.cluster_name,
+        pa.product_a,
+        pa.category_a,
+        pa.brand_a,
+        pa.product_b,
+        pa.category_b,
+        pa.brand_b,
+        pa.times_bought_together,
+        pa.orders_with_both,
+
+        --support: % of orders containing both products
+        round(pa.orders_with_both::float / 
+            sum(pa.orders_with_both) over (partition by pa.cluster_name) * 100, 2) as support_pct,
+
+        --confidence: if bought A, what % also bought B
+        round(pa.orders_with_both::float / pt_a.total_orders * 100, 2) as confidence_pct,
+
+        --lift: how much more liely to but together vs independent
+        round(
+            (pa.orders_with_both::float / pt_a.total_orders) /
+            (pt_b.total_orders::float / sum(pt_b.total_orders) over (partition by pa.cluster_name)),
+            2
+        ) as lift 
+    from product_affinity pa 
+    left join product_totals pt_a 
+        on pa.cluster_name = pt_a.cluster_name 
+        and pa.product_a = pt_a.product_id 
+    left join product_totals pt_b 
+        on pa.cluster_name = pt_b.cluster_name 
+        and pa.product_b = pt_b.product_id 
+),
+
+final as (
+    select 
+        cluster_name,
+        product_a,
+        category_a,
+        brand_a,
+        product_b,
+        category_b,
+        brand_b,
+        times_bought_together,
+        support_pct,
+        confidence_pct,
+        lift,
+
+        --recommendation strength
+        case 
+            when times_bought_together >= 50 and lift >= 2.0 then 'Very Strong'
+            when times_bought_together >= 30 and lift >= 1.5 then 'Strong'
+            when times_bought_together >= 15 and lift >= 1.2 then 'Moderate'
+            else 'Weak'
+        end recommendation_strength,
+
+        --recommendation text
+        'Customers who bought ' || category_a || ' (' || brand_a || ') also bought ' ||
+        category_b || ' (' || brand_b || ') ' || confidence_pct || '% of the time' as recommendation_text 
+    from affinity_metrics 
+    where times_bought_together >= 5 --minimum threshold
+        and lift >= 1.0 --only show when there's actual affinity
+)
+
+select * from final 
+order by cluster_name, times_bought_together desc
+    );
+  
+  
+[0m14:47:46.263603 [debug] [Thread-1 (]: SQL status: OK in 0.037 seconds
+[0m14:47:46.266717 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.266941 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'rpt_product_affinity_v2'
+  
+[0m14:47:46.267505 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:47:46.268160 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.268333 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'rpt_product_affinity_v2'
+  
+[0m14:47:46.268993 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:47:46.272383 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.272602 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+alter table "stylehub"."main"."rpt_product_affinity_v2" rename to "rpt_product_affinity_v2__dbt_backup"
+[0m14:47:46.273539 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:47:46.275143 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.275325 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+alter table "stylehub"."main"."rpt_product_affinity_v2__dbt_tmp" rename to "rpt_product_affinity_v2"
+[0m14:47:46.275653 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:47:46.283024 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: COMMIT
+[0m14:47:46.283232 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.283393 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: COMMIT
+[0m14:47:46.284244 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:47:46.287574 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:47:46.287760 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+      drop table if exists "stylehub"."main"."rpt_product_affinity_v2__dbt_backup" cascade
+    
+[0m14:47:46.288194 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:47:46.289300 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: Close
+[0m14:47:46.290249 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b3315404-5915-469e-8c83-bfcd39eec061', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10577f6b0>]}
+[0m14:47:46.290570 [info ] [Thread-1 (]: 1 of 1 OK created sql table model main.rpt_product_affinity_v2 ................. [[32mOK[0m in 0.09s]
+[0m14:47:46.290832 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:47:46.291372 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:47:46.291512 [debug] [MainThread]: On master: BEGIN
+[0m14:47:46.291627 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:47:46.291872 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:47:46.291994 [debug] [MainThread]: On master: COMMIT
+[0m14:47:46.292111 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:47:46.292224 [debug] [MainThread]: On master: COMMIT
+[0m14:47:46.292413 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:47:46.292534 [debug] [MainThread]: On master: Close
+[0m14:47:46.292686 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:47:46.292802 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_product_affinity_v2' was properly closed.
+[0m14:47:46.292922 [info ] [MainThread]: 
+[0m14:47:46.293059 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m14:47:46.293343 [debug] [MainThread]: Command end result
+[0m14:47:46.304816 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:47:46.305795 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:47:46.308951 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:47:46.309127 [info ] [MainThread]: 
+[0m14:47:46.309324 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:47:46.309459 [info ] [MainThread]: 
+[0m14:47:46.309613 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m14:47:46.310953 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.6163776, "process_in_blocks": "0", "process_kernel_time": 0.2022, "process_mem_max_rss": "193740800", "process_out_blocks": "0", "process_user_time": 1.043396}
+[0m14:47:46.311182 [debug] [MainThread]: Command `dbt run` succeeded at 14:47:46.311144 after 0.62 seconds
+[0m14:47:46.311355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055e13d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f2be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105258b60>]}
+[0m14:47:46.311521 [debug] [MainThread]: Flushing usage events
+[0m14:47:46.428022 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:50:41.740803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078ba780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4b5d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4b59a0>]}
+
+
+============================== 14:50:41.753627 | 205c0097-5af0-4199-a872-d62012dc47e7 ==============================
+[0m14:50:41.753627 [info ] [MainThread]: Running with dbt=1.11.4
+[0m14:50:41.754089 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'debug': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'empty': 'False', 'invocation_command': 'dbt run --select fct_order_items rpt_product_affinity_v2', 'log_path': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/logs', 'profiles_dir': '/Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'write_json': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'target_path': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'warn_error': 'None'}
+[0m14:50:41.921814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d1c1d0>]}
+[0m14:50:41.950762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a96c5f0>]}
+[0m14:50:41.952219 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m14:50:42.003874 [debug] [MainThread]: checksum: 092b177ba87eb6bb3c55954c38aa57900eebac336561eb9ee32218428aa81d43, vars: {}, profile: , target: , version: 1.11.4
+[0m14:50:42.053715 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:50:42.054094 [debug] [MainThread]: Partial parsing: updated file: stylehub_dbt://models/marts/product/fct_order_items.sql
+[0m14:50:42.162937 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stylehub.marts.core
+- models.stylehub.marts.product
+- models.stylehub.staging
+- models.stylehub.marts.personas
+[0m14:50:42.165490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aff9340>]}
+[0m14:50:42.194421 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:50:42.196018 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:50:42.208914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad37bf0>]}
+[0m14:50:42.209200 [info ] [MainThread]: Found 14 models, 472 macros
+[0m14:50:42.209363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aff51c0>]}
+[0m14:50:42.210244 [info ] [MainThread]: 
+[0m14:50:42.210416 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:50:42.210550 [info ] [MainThread]: 
+[0m14:50:42.210808 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m14:50:42.212960 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_stylehub'
+[0m14:50:42.241149 [debug] [ThreadPool]: Using duckdb connection "list_stylehub"
+[0m14:50:42.241396 [debug] [ThreadPool]: On list_stylehub: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"stylehub"'
+    
+  
+  
+[0m14:50:42.241543 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:42.261605 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m14:50:42.262622 [debug] [ThreadPool]: On list_stylehub: Close
+[0m14:50:42.262970 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stylehub, now create_stylehub_main)
+[0m14:50:42.263185 [debug] [ThreadPool]: Creating schema "database: "stylehub"
+schema: "main"
+"
+[0m14:50:42.268008 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:50:42.268252 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='stylehub'
+        and type='sqlite'
+    
+  
+[0m14:50:42.268390 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:42.269203 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m14:50:42.269903 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:50:42.270057 [debug] [ThreadPool]: On create_stylehub_main: BEGIN
+[0m14:50:42.270295 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:50:42.270421 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:50:42.270544 [debug] [ThreadPool]: On create_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "create_stylehub_main"} */
+
+    
+    
+        create schema if not exists "stylehub"."main"
+    
+[0m14:50:42.270958 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:50:42.271348 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:50:42.271481 [debug] [ThreadPool]: Using duckdb connection "create_stylehub_main"
+[0m14:50:42.271596 [debug] [ThreadPool]: On create_stylehub_main: COMMIT
+[0m14:50:42.271787 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:50:42.271915 [debug] [ThreadPool]: On create_stylehub_main: Close
+[0m14:50:42.272721 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_stylehub_main, now list_stylehub_main)
+[0m14:50:42.275345 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:50:42.275501 [debug] [ThreadPool]: On list_stylehub_main: BEGIN
+[0m14:50:42.275624 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:42.275863 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m14:50:42.276000 [debug] [ThreadPool]: Using duckdb connection "list_stylehub_main"
+[0m14:50:42.276133 [debug] [ThreadPool]: On list_stylehub_main: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "connection_name": "list_stylehub_main"} */
+select
+      'stylehub' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'stylehub'
+  
+[0m14:50:42.287416 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m14:50:42.288328 [debug] [ThreadPool]: On list_stylehub_main: ROLLBACK
+[0m14:50:42.289231 [debug] [ThreadPool]: Failed to rollback 'list_stylehub_main'
+[0m14:50:42.289388 [debug] [ThreadPool]: On list_stylehub_main: Close
+[0m14:50:42.290519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a592480>]}
+[0m14:50:42.290768 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:50:42.290902 [debug] [MainThread]: On master: BEGIN
+[0m14:50:42.291022 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:50:42.291276 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:50:42.291406 [debug] [MainThread]: On master: COMMIT
+[0m14:50:42.291530 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:50:42.291647 [debug] [MainThread]: On master: COMMIT
+[0m14:50:42.291842 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:50:42.291969 [debug] [MainThread]: On master: Close
+[0m14:50:42.293264 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.fct_order_items
+[0m14:50:42.293504 [info ] [Thread-1 (]: 1 of 2 START sql table model main.fct_order_items .............................. [RUN]
+[0m14:50:42.293703 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stylehub_main, now model.stylehub_dbt.fct_order_items)
+[0m14:50:42.293860 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.fct_order_items
+[0m14:50:42.297725 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.298503 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.fct_order_items
+[0m14:50:42.313944 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.314753 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.314925 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: BEGIN
+[0m14:50:42.315072 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:42.315425 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.315576 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.315798 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."fct_order_items__dbt_tmp"
+  
+    as (
+      
+
+with orders as (
+    select * from "stylehub"."main"."stg_orders"
+),
+
+products as (
+    select * from "stylehub"."main"."stg_products"
+),
+
+clusters as (
+    select * from "stylehub"."main"."rpt_behavioral_clusters"
+),
+
+-- Assign primary category based on order value
+order_categories as (
+    select
+        o.*,
+        cl.cluster_name,
+        cl.persona_hidden,
+        
+        -- Assign primary category based on order characteristics
+        case
+            when o.total >= 300 then 'outerwear'
+            when o.total >= 150 then 'dresses'
+            when o.total >= 80 then 'shoes'
+            when o.total >= 40 then 'bottoms'
+            else 'tops'
+        end as primary_category,
+        
+        -- Assign secondary category for multi-item orders
+        case
+            when o.num_items >= 4 then 'accessories'
+            when o.num_items >= 2 then 'tops'
+            else null
+        end as secondary_category
+        
+    from orders o
+    left join clusters cl on o.customer_id = cl.customer_id
+),
+
+-- Generate items with assigned categories
+items_with_categories as (
+    select
+        order_id,
+        customer_id,
+        ordered_at,
+        total,
+        num_items,
+        returned,
+        cluster_name,
+        persona_hidden,
+        unnest(generate_series(1, num_items)) as item_number,
+        
+        -- First item is primary category, rest are secondary or random
+        case
+            when unnest(generate_series(1, num_items)) = 1 then primary_category
+            when unnest(generate_series(1, num_items)) = 2 and secondary_category is not null then secondary_category
+            else primary_category  -- Keep same category for consistency
+        end as assigned_category
+        
+    from order_categories
+),
+
+-- Match with actual products from that category
+order_items as (
+    select
+        ic.order_id,
+        ic.customer_id,
+        ic.ordered_at,
+        ic.item_number,
+        
+        -- Pick a random product from the assigned category
+        (
+            select p.product_id
+            from products p
+            where p.category = ic.assigned_category
+            order by random()
+            limit 1
+        ) as product_id,
+        
+        ic.cluster_name,
+        ic.persona_hidden,
+        ic.total as order_total,
+        ic.num_items as items_in_order,
+        ic.returned as order_returned
+        
+    from items_with_categories ic
+),
+
+-- Enrich with product details
+final as (
+    select
+        oi.order_id,
+        oi.customer_id,
+        oi.ordered_at,
+        oi.product_id,
+        
+        -- Product details
+        p.product_name,
+        p.category,
+        p.brand,
+        p.base_price,
+        
+        -- Order context
+        oi.order_total,
+        oi.items_in_order,
+        oi.order_returned,
+        
+        -- Customer context
+        oi.cluster_name,
+        oi.persona_hidden
+        
+    from order_items oi
+    left join products p on oi.product_id = p.product_id
+)
+
+select * from final
+    );
+  
+  
+[0m14:50:42.369245 [debug] [Thread-1 (]: SQL status: OK in 0.053 seconds
+[0m14:50:42.372374 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.372632 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_order_items'
+  
+[0m14:50:42.373247 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.374057 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.377055 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'fct_order_items'
+  
+[0m14:50:42.377784 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:50:42.381282 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.381527 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+alter table "stylehub"."main"."fct_order_items" rename to "fct_order_items__dbt_backup"
+[0m14:50:42.382366 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:50:42.383998 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.384178 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+alter table "stylehub"."main"."fct_order_items__dbt_tmp" rename to "fct_order_items"
+[0m14:50:42.384487 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.391625 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: COMMIT
+[0m14:50:42.391823 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.391977 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: COMMIT
+[0m14:50:42.410694 [debug] [Thread-1 (]: SQL status: OK in 0.018 seconds
+[0m14:50:42.413781 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.fct_order_items"
+[0m14:50:42.413990 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.fct_order_items"} */
+
+      drop table if exists "stylehub"."main"."fct_order_items__dbt_backup" cascade
+    
+[0m14:50:42.415364 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m14:50:42.416613 [debug] [Thread-1 (]: On model.stylehub_dbt.fct_order_items: Close
+[0m14:50:42.417666 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6579e0>]}
+[0m14:50:42.418008 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main.fct_order_items ......................... [[32mOK[0m in 0.12s]
+[0m14:50:42.418295 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.fct_order_items
+[0m14:50:42.418645 [debug] [Thread-1 (]: Began running node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:50:42.418894 [info ] [Thread-1 (]: 2 of 2 START sql table model main.rpt_product_affinity_v2 ...................... [RUN]
+[0m14:50:42.419123 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.stylehub_dbt.fct_order_items, now model.stylehub_dbt.rpt_product_affinity_v2)
+[0m14:50:42.419286 [debug] [Thread-1 (]: Began compiling node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:50:42.421162 [debug] [Thread-1 (]: Writing injected SQL for node "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.422093 [debug] [Thread-1 (]: Began executing node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:50:42.424820 [debug] [Thread-1 (]: Writing runtime sql for node "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.425532 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.425737 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: BEGIN
+[0m14:50:42.425905 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:42.426306 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.426465 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.426780 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+  
+    
+    
+
+    create  table
+      "stylehub"."main"."rpt_product_affinity_v2__dbt_tmp"
+  
+    as (
+      
+
+with order_items as (
+    select * from "stylehub"."main"."fct_order_items"
+),
+
+--get all product pairs purchased together
+product_pairs as (
+    select 
+        oi1.cluster_name,
+        oi1.product_id as product_a,
+        oi1.category as category_a,
+        oi1.brand as brand_a,
+        oi2.product_id as product_b,
+        oi2.category as category_b,
+        oi2.brand as brand_b,
+        oi1.order_id 
+    from order_items oi1 
+    inner join order_items oi2 
+        on oi1.order_id = oi2.order_id 
+        and oi1.product_id < oi2.product_id --avoid duplicates and self-joins
+    where oi1.cluster_name is not null 
+),
+
+--count co-occurrences
+product_affinity as (
+    select 
+        cluster_name,
+        product_a,
+        category_a,
+        brand_a,
+        product_b,
+        category_b,
+        brand_b,
+        count(*) as times_bought_together,
+        count(distinct order_id) as orders_with_both 
+    from product_pairs 
+    group by 
+        cluster_name,
+        product_a, category_a, brand_a,
+        product_b, category_b, brand_b
+),
+
+--calculate individual product purchase counts
+product_totals as (
+    select 
+        cluster_name,
+        product_id,
+        count(distinct order_id) as total_orders
+    from order_items 
+    where cluster_name is not null 
+    group by cluster_name, product_id 
+),
+
+--calculate confidence with lift
+affinity_metrics as (
+    select 
+        pa.cluster_name,
+        pa.product_a,
+        pa.category_a,
+        pa.brand_a,
+        pa.product_b,
+        pa.category_b,
+        pa.brand_b,
+        pa.times_bought_together,
+        pa.orders_with_both,
+
+        --support: % of orders containing both products
+        round(pa.orders_with_both::float / 
+            sum(pa.orders_with_both) over (partition by pa.cluster_name) * 100, 2) as support_pct,
+
+        --confidence: if bought A, what % also bought B
+        round(pa.orders_with_both::float / pt_a.total_orders * 100, 2) as confidence_pct,
+
+        --lift: how much more liely to but together vs independent
+        round(
+            (pa.orders_with_both::float / pt_a.total_orders) /
+            (pt_b.total_orders::float / sum(pt_b.total_orders) over (partition by pa.cluster_name)),
+            2
+        ) as lift 
+    from product_affinity pa 
+    left join product_totals pt_a 
+        on pa.cluster_name = pt_a.cluster_name 
+        and pa.product_a = pt_a.product_id 
+    left join product_totals pt_b 
+        on pa.cluster_name = pt_b.cluster_name 
+        and pa.product_b = pt_b.product_id 
+),
+
+final as (
+    select 
+        cluster_name,
+        product_a,
+        category_a,
+        brand_a,
+        product_b,
+        category_b,
+        brand_b,
+        times_bought_together,
+        support_pct,
+        confidence_pct,
+        lift,
+
+        --recommendation strength
+        case 
+            when times_bought_together >= 50 and lift >= 2.0 then 'Very Strong'
+            when times_bought_together >= 30 and lift >= 1.5 then 'Strong'
+            when times_bought_together >= 15 and lift >= 1.2 then 'Moderate'
+            else 'Weak'
+        end recommendation_strength,
+
+        --recommendation text
+        'Customers who bought ' || category_a || ' (' || brand_a || ') also bought ' ||
+        category_b || ' (' || brand_b || ') ' || confidence_pct || '% of the time' as recommendation_text 
+    from affinity_metrics 
+    where times_bought_together >= 5 --minimum threshold
+        and lift >= 1.0 --only show when there's actual affinity
+)
+
+select * from final 
+order by cluster_name, times_bought_together desc
+    );
+  
+  
+[0m14:50:42.460394 [debug] [Thread-1 (]: SQL status: OK in 0.033 seconds
+[0m14:50:42.500730 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.501020 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'rpt_product_affinity_v2'
+  
+[0m14:50:42.501595 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.502222 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.502394 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'rpt_product_affinity_v2'
+  
+[0m14:50:42.502835 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.504471 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.504655 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+alter table "stylehub"."main"."rpt_product_affinity_v2" rename to "rpt_product_affinity_v2__dbt_backup"
+[0m14:50:42.504986 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.506299 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.506465 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+alter table "stylehub"."main"."rpt_product_affinity_v2__dbt_tmp" rename to "rpt_product_affinity_v2"
+[0m14:50:42.506746 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.507491 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: COMMIT
+[0m14:50:42.507644 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.507781 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: COMMIT
+[0m14:50:42.508266 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.509396 [debug] [Thread-1 (]: Using duckdb connection "model.stylehub_dbt.rpt_product_affinity_v2"
+[0m14:50:42.509568 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: /* {"app": "dbt", "dbt_version": "1.11.4", "profile_name": "stylehub", "target_name": "dev", "node_id": "model.stylehub_dbt.rpt_product_affinity_v2"} */
+
+      drop table if exists "stylehub"."main"."rpt_product_affinity_v2__dbt_backup" cascade
+    
+[0m14:50:42.509964 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m14:50:42.510557 [debug] [Thread-1 (]: On model.stylehub_dbt.rpt_product_affinity_v2: Close
+[0m14:50:42.510825 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '205c0097-5af0-4199-a872-d62012dc47e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c68bb60>]}
+[0m14:50:42.511106 [info ] [Thread-1 (]: 2 of 2 OK created sql table model main.rpt_product_affinity_v2 ................. [[32mOK[0m in 0.09s]
+[0m14:50:42.511353 [debug] [Thread-1 (]: Finished running node model.stylehub_dbt.rpt_product_affinity_v2
+[0m14:50:42.511850 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:50:42.511990 [debug] [MainThread]: On master: BEGIN
+[0m14:50:42.512110 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:50:42.512347 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:50:42.512472 [debug] [MainThread]: On master: COMMIT
+[0m14:50:42.512592 [debug] [MainThread]: Using duckdb connection "master"
+[0m14:50:42.512709 [debug] [MainThread]: On master: COMMIT
+[0m14:50:42.512897 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m14:50:42.513017 [debug] [MainThread]: On master: Close
+[0m14:50:42.513169 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:50:42.513288 [debug] [MainThread]: Connection 'model.stylehub_dbt.rpt_product_affinity_v2' was properly closed.
+[0m14:50:42.513444 [info ] [MainThread]: 
+[0m14:50:42.513601 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 0.30 seconds (0.30s).
+[0m14:50:42.513961 [debug] [MainThread]: Command end result
+[0m14:50:42.526993 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/manifest.json
+[0m14:50:42.528033 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/semantic_manifest.json
+[0m14:50:42.531151 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/hazeldonaldson/Documents/stylehub_analysis/stylehub_dbt/target/run_results.json
+[0m14:50:42.531336 [info ] [MainThread]: 
+[0m14:50:42.531527 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:50:42.531671 [info ] [MainThread]: 
+[0m14:50:42.531819 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m14:50:42.533254 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8294249, "process_in_blocks": "0", "process_kernel_time": 0.245487, "process_mem_max_rss": "269074432", "process_out_blocks": "0", "process_user_time": 1.336945}
+[0m14:50:42.533478 [debug] [MainThread]: Command `dbt run` succeeded at 14:50:42.533435 after 0.83 seconds
+[0m14:50:42.533654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a53e240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a53c140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4b5bb0>]}
+[0m14:50:42.533825 [debug] [MainThread]: Flushing usage events
+[0m14:50:42.664140 [debug] [MainThread]: An error was encountered while trying to flush usage events
