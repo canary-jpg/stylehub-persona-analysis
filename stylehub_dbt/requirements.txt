@@ -1,0 +1,19 @@
+# Core dependencies
+dbt-duckdb==1.7.3
+duckdb==0.10.0
+fastapi==0.109.2
+uvicorn==0.27.1
+pydantic==2.6.1
+
+# Dashboard
+streamlit==1.31.1
+plotly==5.18.0
+pandas==2.2.0
+
+# API utilities
+python-multipart==0.0.9
+requests==2.31.0
+
+# Development
+pytest==8.0.0
+black==24.1.1
