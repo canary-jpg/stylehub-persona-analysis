@@ -142,7 +142,7 @@ def predict_persona(data: CustomerData) -> PersonaPrediction:
             ltv_forecast=3111.0
         )
     
-    elif data.first_order_value and data_first_order_value >= 300:
+    elif data.first_order_value and data.first_order_value >= 300:
         return PersonaPrediction(
             predicted_persona='Big Ticket Buyer',
             confidence=0.79,
